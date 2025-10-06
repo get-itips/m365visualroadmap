@@ -5,4 +5,7 @@
 layout: default
 ---
 
-bla bla bla
+| Product | General Availability |
+| :-------------: | --------- |
+
+Roadmap files are generated daily.
