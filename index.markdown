@@ -5,7 +5,13 @@
 layout: default
 ---
 
-| Product | General Availability |
+| Product | Roadmap |
 | :-------------: | --------- |
+|Microsoft Teams | General Availability|
+|Microsoft Copilot (Microsoft 365) | General Availability|
 
+## Disclaimer
 Roadmap files are generated daily.
+
+## Maintainer
+- [Andrés Gorzelany](https://www.linkedin.com/in/andresgorzelany/)
