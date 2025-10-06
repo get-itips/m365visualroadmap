@@ -23,7 +23,7 @@ email: andresg@capazero.net
 description: >- # this means to ignore newlines until "baseurl:"
   This is a site that aims to provide a visual representation of Microsoft 365 Roadmap. If you find any issues please open an issue in the GitHub repository.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://get-itips.capazero.net/m365visualroadmap/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.m365visualroadmap.net" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: andresgorzelany
 github_username:  get-itips
 
