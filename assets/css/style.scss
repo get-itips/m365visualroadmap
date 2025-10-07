@@ -54,13 +54,13 @@
     margin: 2em 0
   }
   
-  /* Label the data	*/
-  td:nth-of-type(1):before {content: "To Administer	";}
-  td:nth-of-type(2):before {content: "Module Name";}
-  td:nth-of-type(3):before {content: "Stable Version";}
-  td:nth-of-type(4):before {content: "How To Install";}
-  td:nth-of-type(5):before {content: "Preview Version";}
-  td:nth-of-type(6):before {content: "How To Install";}
-  td:nth-of-type(7):before {content: "How to Connect";}
-  td:nth-of-type(8):before {content: "Works in PS7?";}
+
+.roadmap-wrapper a {
+    display: block;
+    margin-bottom: 8px;
+    word-break: break-word;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 13px;
+}
+
 }
