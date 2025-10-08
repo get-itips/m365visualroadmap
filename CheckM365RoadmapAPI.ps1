@@ -48,3 +48,5 @@ $result=ConvertFrom-Json $webRequestContent
 $countOfItems = if ($result.value) { $result.value.Count } else { $result.Count }
 
 Write-Output $countOfItems +" items"
+
+}
