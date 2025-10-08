@@ -1,0 +1,28 @@
+name: RoadmapChecker
+
+# Run every day at 2AM and 2PM
+on:
+  schedule:
+  - cron: "0 2,14 * * *"
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v4
+
+      - name: Install and cache PowerShell modules
+        id: psmodulecache
+        uses: potatoqualitee/psmodulecache@v6.2.1
+        with:
+          modules-to-cache: powershell-yaml
+          shell: powershell, pwsh
+
+      - name: Run script
+        id: CheckM365RoadmapAPI
+        run: ./CheckM365RoadmapAPI.ps1
