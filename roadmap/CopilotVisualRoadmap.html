@@ -1,0 +1,1041 @@
+<html>
+<head>
+    <title>M365 Visual Roadmap | Microsoft Copilot (Microsoft 365)</title>
+
+
+<style>
+.wrapper a {
+    display: block;       /* Each link on a new line */
+    margin-bottom: 8px;   /* Space between links */
+    word-break: break-word;    /* breaks long words */
+	font-family: Segoe UI;
+	font-size: 13px;
+}
+</style>
+
+</head>
+<body>
+    <h1>M365 Visual Roadmap</h1>
+	
+<link rel="stylesheet" href="https://unpkg.com/d3-milestones/build/d3-milestones.css">
+<script src="https://unpkg.com/d3-milestones/build/d3-milestones.min.js"></script>
+
+<div id="timeline"></div>
+
+<script>
+  milestones('#timeline')
+	.optimize('true')
+	.autoResize('false')
+	.urlTarget('_blank')
+	.distribution('top-bottom')
+    .mapping({
+      'timestamp': 'date',
+      'text': 'title',
+	  'url': 'url'
+    })
+    .parseTime('%B.%Y')
+    .aggregateBy('month')
+    .render([
+{ date: "November.2026", title:'Microsoft Viva: Copilot Dashboard - M365 Copilot Chat adoption metrics', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=499899'}
+,
+{ date: "August.2026", title:'Microsoft Teams: Copilot in Teams can analyze content shared on-screen during a meeting', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=325873'}
+,
+{ date: "June.2026", title:'OneNote: Boost productivity using voice with Copilot on OneNote Mobile (iPhone)', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=422320'}
+,
+{ date: "June.2026", title:'OneNote: Boost productivity using voice with Copilot on OneNote Mobile (Android)', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=422321'}
+,
+{ date: "June.2026", title:'OneNote: Copilot on OneNote brings in notes from Video and Images (Android)', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=422322'}
+,
+{ date: "June.2026", title:'OneNote: Copilot on OneNote brings in notes from Video and Images (iPhone)', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=422325'}
+,
+{ date: "March.2026", title:'Microsoft Viva: Copilot Dashboard - Enhanced scope drilldown', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=495463'}
+,
+{ date: "February.2026", title:'Microsoft Viva: Copilot Analytics - Agent Dashboard.', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=506749'}
+,
+{ date: "January.2026", title:'Microsoft Copilot (Microsoft 365): Lists in Context IQ', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=422308'}
+,
+{ date: "January.2026", title:'Microsoft Purview compliance portal: Data Lifecycle Management - Retention based on Last Accessed for files in OneDrive and SharePoint', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=472030'}
+,
+{ date: "January.2026", title:'Microsoft Viva: Thumbs Up Rate Metric for Microsoft 365 Copilot in Copilot Dashboard', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=496655'}
+,
+{ date: "January.2026", title:'Microsoft Copilot (Microsoft 365): Viva Engage - Agents in communities', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=499898'}
+,
+{ date: "January.2026", title:'Microsoft Copilot (Microsoft 365): Knowledge Agent', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=501451'}
+,
+{ date: "December.2025", title:'Microsoft Copilot (Microsoft 365): Current web content included when drafting with Copilot in Word', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=380839'}
+,
+{ date: "December.2025", title:'Microsoft Copilot (Microsoft 365): Copilot Prompt Gallery - Company-wide prompt publishing', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=486695'}
+,
+{ date: "December.2025", title:'Microsoft Viva: Copilot Analytics - Microsoft 365 Copilot agents report', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=488104'}
+,
+{ date: "December.2025", title:'Microsoft Teams: Copilot in Teams meetings can search web and work files, emails and people', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=489215'}
+,
+{ date: "December.2025", title:'Microsoft Copilot (Microsoft 365): Intelligent meeting recap can summarize content shared on screen', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=490052'}
+,
+{ date: "December.2025", title:'Microsoft 365 Admin Center: M365 Copilot - Billing and usage - Usage insights', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=492616'}
+,
+{ date: "December.2025", title:'Microsoft Copilot (Microsoft 365): [Copilot Extensibility] Users in GCC-M will able to use custom engine agents', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=501111'}
+,
+{ date: "December.2025", title:'Microsoft Copilot (Microsoft 365): [Copilot Extensibility] [Search UX] Enable customization of icon & name for data sources in Search (& chat)', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=502532'}
+,
+{ date: "December.2025", title:'Microsoft Copilot (Microsoft 365): [Copilot Extensibility] Graph API enhancements for better Relevance & UX', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=502537'}
+,
+{ date: "December.2025", title:'Microsoft Copilot (Microsoft 365): [Copilot Extensibility] Improved discovery of Copilot connector sources in Microsoft 365 Copilot (optionally add chat) with Content Source filter(s)', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=502541'}
+,
+{ date: "December.2025", title:'Microsoft Copilot (Microsoft 365): [Copilot Extensibility] Improve discovery of Champion connector prompts for Users', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=502542'}
+,
+{ date: "November.2025", title:'Microsoft Copilot (Microsoft 365): Calendar search for email delegates', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=413718'}
+,
+{ date: "November.2025", title:'Microsoft Purview compliance portal: Insider Risk Management - Risky AI usage', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=480730'}
+,
+{ date: "November.2025", title:'Microsoft Copilot (Microsoft 365): People connectors for Microsoft 365 Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=480736'}
+,
+{ date: "November.2025", title:'Microsoft Copilot (Microsoft 365): Admins will be able to define rules for scenarios like auto publishing Microsoft 365 certified agents and perform bulk cleanup of unused agents.', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=481518'}
+,
+{ date: "November.2025", title:'SharePoint: Chat one-on-one with SharePoint agents in Teams', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=481825'}
+,
+{ date: "November.2025", title:'Microsoft Teams: Intelligent meeting recap available in multi-tenant set ups', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=488298'}
+,
+{ date: "November.2025", title:'Microsoft Copilot (Microsoft 365): Reference a Microsoft Teams meeting when creating a PowerPoint presentation', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=492979'}
+,
+{ date: "November.2025", title:'Microsoft Copilot (Microsoft 365): Reference a Microsoft Teams meeting when creating a PowerPoint presentation', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=492980'}
+,
+{ date: "November.2025", title:'Microsoft Copilot (Microsoft 365): Reference a Microsoft Teams meeting when creating a PowerPoint presentation', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=492981'}
+,
+{ date: "November.2025", title:'Microsoft Copilot (Microsoft 365): Catchup on important emails in Copilot Chat', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=494515'}
+,
+{ date: "November.2025", title:'Microsoft Viva: Copilot Dashboard - Updated meeting metrics for Intelligent Recap', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=494687'}
+,
+{ date: "November.2025", title:'Microsoft Purview Compliance Portal: Data Lifecycle Management- Introduction of secure workflow to bypass retention holds and delete content on OneDrive and SharePoint Online', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=496151'}
+,
+{ date: "November.2025", title:'Microsoft Copilot (Microsoft 365): Generate a formula with Copilot from the grid upon "="', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=496362'}
+,
+{ date: "November.2025", title:'Microsoft Edge: Microsoft 365 Copilot Chat access to page content will soon extend to work across multiple open tabs', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=496364'}
+,
+{ date: "November.2025", title:'Microsoft Viva: Copilot Analytics - Copilot Employee Experience Outcomes Report with Viva Glint', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=496654'}
+,
+{ date: "November.2025", title:'Microsoft Copilot (Microsoft 365): 1-click to create a FAQ page based on content in Copilot Notebook', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497133'}
+,
+{ date: "November.2025", title:'Microsoft Copilot (Microsoft 365): 1-click to create a Brief page based on content in Copilot Notebook', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497134'}
+,
+{ date: "November.2025", title:'Microsoft Copilot (Microsoft 365): Reference an Excel file when creating a slide with Copilot for PowerPoint', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497537'}
+,
+{ date: "November.2025", title:'Microsoft Copilot (Microsoft 365): Reference an Excel file when creating a slide with Copilot for PowerPoint', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497538'}
+,
+{ date: "November.2025", title:'Microsoft Copilot (Microsoft 365): Reference an Excel file when creating a slide with Copilot for PowerPoint', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497539'}
+,
+{ date: "November.2025", title:'Excel: =COPILOT Function', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=499660'}
+,
+{ date: "November.2025", title:'Microsoft Copilot (Microsoft 365): Rich Bing web answer cards on M365 Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=500865'}
+,
+{ date: "November.2025", title:'Microsoft Teams: Enhanced Copilot chat summary', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=501201'}
+,
+{ date: "November.2025", title:'Microsoft Copilot (Microsoft 365):  Replace stock video footage with AI-Generated Images in Microsoft 365 Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=501570'}
+,
+{ date: "November.2025", title:'Microsoft Viva: Copilot Dashboard - Broader access to M365 Copilot Chat insights', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=501581'}
+,
+{ date: "November.2025", title:'Microsoft Copilot (Microsoft 365): Admins can create and deploy custom Model Context Protocol (MCP) connectors across Microsoft 365.', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=501585'}
+,
+{ date: "November.2025", title:'Microsoft Copilot (Microsoft 365): GPT-5 in Copilot Studio (embedded Microsoft 365 Copilot experience)', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=502552'}
+,
+{ date: "November.2025", title:'Microsoft Copilot (Microsoft 365): Generate icons using AI in Copilot Studio lite', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=502864'}
+,
+{ date: "November.2025", title:'Microsoft Teams: Unified Agent and App Availability Management Across Microsoft 365 and Teams Admin Center', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=503105'}
+,
+{ date: "November.2025", title:'Microsoft Copilot (Microsoft 365): [Copilot Chat] Search for meetings organized by a specific person', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=503859'}
+,
+{ date: "November.2025", title:'Microsoft Copilot (Microsoft 365): New Create module with Word, Excel and PPT templates', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=506847'}
+,
+{ date: "November.2025", title:'Microsoft Copilot (Microsoft 365): Microsoft 365 Copilot Chat - General Availability for the GCC High environment', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=509107'}
+,
+{ date: "October.2025", title:'Microsoft Copilot: Pinned chats', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=374335'}
+,
+{ date: "October.2025", title:'Microsoft Graph: Graph API - Copilot for Microsoft 365 usage', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=396562'}
+,
+{ date: "October.2025", title:'Microsoft Copilot (Microsoft 365): Meetings search using categories added in Outlook', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=413720'}
+,
+{ date: "October.2025", title:'Microsoft Copilot (Microsoft 365): Teams Channels in Context IQ', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=429645'}
+,
+{ date: "October.2025", title:'OneDrive: Agents in OneDrive', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=469503'}
+,
+{ date: "October.2025", title:'Microsoft 365 (Microsoft Copilot): Copilot Chat - Loop Notebooks in ContextIQ', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=473447'}
+,
+{ date: "October.2025", title:'Microsoft Copilot (Microsoft 365): In Copilot Pages, the Chat can now be used to modify the Page', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=478647'}
+,
+{ date: "October.2025", title:'OneDrive: OneDrive files as knowledge sources for agents', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=480728'}
+,
+{ date: "October.2025", title:'Outlook: Agents for Microsoft 365 Copilot available in Copilot Chat in classic Outlook for Windows', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=481559'}
+,
+{ date: "October.2025", title:'Microsoft 365 admin center: Usage reports - Microsoft 365 Copilot for GCC Moderate', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=481835'}
+,
+{ date: "October.2025", title:'Microsoft SharePoint: New web part for FAQs', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=482198'}
+,
+{ date: "October.2025", title:'Microsoft Viva: Copilot Analytics - Prompt category metrics for Microsoft 365 Copilot Chat', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=486698'}
+,
+{ date: "October.2025", title:'Microsoft Copilot (Microsoft 365): Employee Self-Service Agent in M365 Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=487836'}
+,
+{ date: "October.2025", title:'Microsoft Purview compliance portal: OneDrive support for Data Risk Assessments', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=488808'}
+,
+{ date: "October.2025", title:'Microsoft Edge: Microsoft Edge for Business will soon integrate an entry point into Microsoft 365 Copilot Chat from the address bar', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=489822'}
+,
+{ date: "October.2025", title:'Microsoft Copilot (Microsoft 365): Overview of recent comments and changes in Word, Excel, PowerPoint', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=489825'}
+,
+{ date: "October.2025", title:'Microsoft Copilot (Microsoft 365): See a summary from Copilot of the latest changes and comments in the Word, Excel, and PowerPoint backstage view.', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=489826'}
+,
+{ date: "October.2025", title:'Microsoft Copilot (Microsoft 365): Researcher toggle in Copilot Chat', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=490549'}
+,
+{ date: "October.2025", title:'Microsoft Edge: Ask Copilot from the address bar', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=493287'}
+,
+{ date: "October.2025", title:'Microsoft Copilot (Microsoft 365): Continue editing in Outlook from Copilot Chat', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=494510'}
+,
+{ date: "October.2025", title:'Microsoft Viva: Copilot Dashboard - Benchmarks', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=495464'}
+,
+{ date: "October.2025", title:'Microsoft Copilot (Microsoft 365): Content Sources in Copilot Chat', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=496596'}
+,
+{ date: "October.2025", title:'Microsoft Copilot (Microsoft 365): Copilot Dashboard: Team Views', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497111'}
+,
+{ date: "October.2025", title:' Microsoft Edge: Summarization, Translation, and Citation will soon be supported by Microsoft Copilot and Microsoft 365 Copilot Chat in our menus', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497135'}
+,
+{ date: "October.2025", title:'Microsoft Copilot (Microsoft 365): Increased efficiency with auto-generated Copilot Pages', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497161'}
+,
+{ date: "October.2025", title:'Microsoft Copilot (Microsoft 365): Reference a PDF file when creating a slide with Copilot for PowerPoint', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497536'}
+,
+{ date: "October.2025", title:'Microsoft Copilot (Microsoft 365): Reference a PDF file when creating a slide with Copilot for PowerPoint', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497540'}
+,
+{ date: "October.2025", title:'Microsoft Copilot (Microsoft 365): Reference an PDF file when creating a slide with Copilot for PowerPoint', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497541'}
+,
+{ date: "October.2025", title:'Microsoft Copilot (Microsoft 365): Say "Hey Copilot" to activate voice conversations with the Microsoft 365 Copilot app on Windows', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497848'}
+,
+{ date: "October.2025", title:'Microsoft CoPilot (Microsoft 365): List email attachments in M365 Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497909'}
+,
+{ date: "October.2025", title:'Microsoft Copilot (Microsoft 365): Surveys Agent helps you build, run, and analyze surveys', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=498219'}
+,
+{ date: "October.2025", title:'Microsoft Purview compliance portal: Audit logs for agent management in Microsoft 365 admin center', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=498227'}
+,
+{ date: "October.2025", title:'Outlook: New Scheduling and Event Creation Experience', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=498914'}
+,
+{ date: "October.2025", title:'Microsoft Viva: Copilot Analytics - Copilot Studio agent report in Insights enhanced with autonomous agents.', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=499422'}
+,
+{ date: "October.2025", title:'Microsoft Edge: Ground Microsoft 365 Copilot Chat in Edge for Business in your open OneDrive and SharePoint documents', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=499423'}
+,
+{ date: "October.2025", title:'Microsoft Edge: Ground Microsoft 365 Copilot Chat in Edge for Business in your open YouTube videos', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=499424'}
+,
+{ date: "October.2025", title:'Microsoft Copilot (Microsoft 365): Agent Mode in Word for Enhanced document editing', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=499428'}
+,
+{ date: "October.2025", title:'Microsoft Teams: Facilitator agent for scheduled meetings in Teams Rooms  ', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=499891'}
+,
+{ date: "October.2025", title:'Microsoft Copilot (Microsoft 365): Admin control for org-wide agent sharing', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=500376'}
+,
+{ date: "October.2025", title:'Microsoft Copilot (Microsoft 365): Copilot Chat - Support for emails in ContextIQ', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=500377'}
+,
+{ date: "October.2025", title:'Microsoft 365 Copilot: Initiate Copilot Chat by sharing files to the Microsoft 365 Copilot app on iPhone and iPad ', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=500633'}
+,
+{ date: "October.2025", title:'Microsoft Teams: Copilot Chat for Teams Chats, Channels, Calling and Meetings', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=501107'}
+,
+{ date: "October.2025", title:'Microsoft Copilot (Microsoft 365): [Copilot Extensibility] Admins can deploy and govern agents with MCP in the M365 admin center', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=501124'}
+,
+{ date: "October.2025", title:'Microsoft Copilot (Microsoft 365): Updates to OneDrive file browsing experience in the Microsoft 365 Copilot app on iPad and iPhone', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=501277'}
+,
+{ date: "October.2025", title:'Microsoft Copilot (Microsoft 365): Show more results in Copilot Chat', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=501576'}
+,
+{ date: "October.2025", title:'Microsoft Copilot (Microsoft 365): Library in the Microsoft 365 Copilot app', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=501783'}
+,
+{ date: "October.2025", title:'Microsoft Copilot (Microsoft 365): Edit your Copilot-generated PowerPoint presentation outline via Pages in Chat', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=501785'}
+,
+{ date: "October.2025", title:'Microsoft Copilot (Microsoft 365): Copilot Chat in Word, Excel, PowerPoint, and OneNote for GCC-M', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=502854'}
+,
+{ date: "October.2025", title:'Microsoft Copilot (Microsoft 365): Copilot Chat in Word, Excel, PowerPoint, OneNote, and Outlook for DoD', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=502855'}
+,
+{ date: "October.2025", title:'Microsoft Copilot (Microsoft 365): Live subtitles on voice chat in Copilot when using the quick composer', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=502858'}
+,
+{ date: "October.2025", title:'Microsoft 365 admin center: Agent Ownership Reassignment', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=502867'}
+,
+{ date: "October.2025", title:'Microsoft CoPilot (Microsoft 365): Microsoft Graph APIs for App & Agent Inventory and Details. ', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=502875'}
+,
+{ date: "October.2025", title:'Microsoft 365 admin center: Agent metadata in inventory export', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=502878'}
+,
+{ date: "October.2025", title:'Microsoft Copilot (Microsoft 365): Domain exclusion for web grounding', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=503144'}
+,
+{ date: "October.2025", title:'Microsoft 365 admin center: Capacity Pack Support for SharePoint Agent and Copilot Tuning in MAC ', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=503145'}
+,
+{ date: "October.2025", title:'Microsoft Copilot (Microsoft 365): Overview in Copilot Notebooks', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=503757'}
+,
+{ date: "October.2025", title:'Microsoft Copilot (Microsoft 365): Updates to Memory and Personalization in Microsoft 365 Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=503955'}
+,
+{ date: "September.2025", title:'Microsoft Viva: Copilot Headlines report in Advanced Insights', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=408543'}
+,
+{ date: "September.2025", title:'Microsoft Copilot (Microsoft 365): Viva Connections cards in Microsoft 365 Copilots', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=412621'}
+,
+{ date: "September.2025", title:'Microsoft Copilot (Microsoft 365): Scope delegated mailbox access for emails in Business Chat', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=416062'}
+,
+{ date: "September.2025", title:'OneNote: Summary and Q&A in OneNote Mobile with Copilot (Android)', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=422323'}
+,
+{ date: "September.2025", title:'OneNote: Summary and Q&A in OneNote Mobile with Copilot (Iphone)', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=422324'}
+,
+{ date: "September.2025", title:'Microsoft Copilot (Microsoft 365): Copilot Chat - Teams chats in ContextIQ', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=429646'}
+,
+{ date: "September.2025", title:'Microsoft Teams: Facilitator Agent', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=478611'}
+,
+{ date: "September.2025", title:'Microsoft Copilot (Microsoft 365): The chat experience now offers better search refinement on CIQ menu Files tab', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=481136'}
+,
+{ date: "September.2025", title:'Microsoft Copilot (Microsoft 365): Voice chat in Microsoft 365 Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=481138'}
+,
+{ date: "September.2025", title:'SharePoint: SharePoint Agents in Teams Channels', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=481822'}
+,
+{ date: "September.2025", title:'SharePoint: SharePoint agents in Teams Mobile', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=481823'}
+,
+{ date: "September.2025", title:'SharePoint: SharePoint agents are available in Teams app Store', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=481824'}
+,
+{ date: "September.2025", title:'Add multiple SharePoint agents in a single Teams conversation', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=481826'}
+,
+{ date: "September.2025", title:'Microsoft Copilot (Microsoft 365): Agents in Copilot Chat available on Edge Sidebar', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=482410'}
+,
+{ date: "September.2025", title:'Microsoft Copilot (Microsoft 365): Access SharePoint agents in the Microsoft 365 Copilot app', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=482601'}
+,
+{ date: "September.2025", title:'Microsoft Purview compliance portal: Site default labeling for SharePoint Online and Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=485732'}
+,
+{ date: "September.2025", title:'Microsoft Purview compliance portal: Site default labeling for SharePoint Online and Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=485733'}
+,
+{ date: "September.2025", title:'Microsoft Copilot (Microsoft 365): Copilot can now answer questions about opened Copilot Pages in chat', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=487848'}
+,
+{ date: "September.2025", title:'Microsoft 365 admin center: Manage SharePoint agents via Agents page', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=487857'}
+,
+{ date: "September.2025", title:'Microsoft Copilot (Microsoft 365): Shared mailbox access for emails in Copilot Chat', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=488797'}
+,
+{ date: "September.2025", title:'Microsoft Purview compliance portal: Microsoft Purview Data Security Posture Management for AI Apps and agents', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=489492'}
+,
+{ date: "September.2025", title:'Microsoft Copilot (Microsoft 365): Skills agent', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=489823'}
+,
+{ date: "September.2025", title:'Microsoft Teams: Copilot in Teams can generate an audio overview of your meetings', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=490051'}
+,
+{ date: "September.2025", title:'Microsoft 365 Admin Center: Usage reports - Message consumption for Pay-as-you-go experiences in Copilot Chat.', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=490738'}
+,
+{ date: "September.2025", title:'Microsoft Viva: Viva Insights - Skills landscape report for organizations ', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=491022'}
+,
+{ date: "September.2025", title:'Microsoft 365 Admin Center: Pin agents in M365 Copilot Chat', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=492613'}
+,
+{ date: "September.2025", title:'Microsoft Copilot (Microsoft 365): Researcher available in Copilot Notebooks', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=493288'}
+,
+{ date: "September.2025", title:'Microsoft Copilot (Microsoft 365): Frontier and Microsoft agent user request approval flow in Microsoft 365 admin center', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=494809'}
+,
+{ date: "September.2025", title:'Outlook: Schedule from email with Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=495260'}
+,
+{ date: "September.2025", title:'Microsoft Copilot (Microsoft 365): Add topic(s) through Copilot to your existing presentation', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=496136'}
+,
+{ date: "September.2025", title:'Microsoft Copilot (Microsoft 365): Add topic(s) through Copilot to your existing presentation', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=496137'}
+,
+{ date: "September.2025", title:'Microsoft Copilot (Microsoft 365): Add topic(s) through Copilot to your existing presentation', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=496138'}
+,
+{ date: "September.2025", title:'Microsoft Copilot (Microsoft 365): Copilot uses enterprise assets hosted on SharePoint OAL or Templafy when creating a slide', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=496365'}
+,
+{ date: "September.2025", title:'Microsoft Copilot (Microsoft 365): Copilot uses enterprise assets hosted on SharePoint OAL or Templafy when creating a slide', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=496366'}
+,
+{ date: "September.2025", title:'Microsoft Copilot (Microsoft 365): Copilot uses enterprise assets hosted on SharePoint OAL or Templafy when creating a slide', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=496367'}
+,
+{ date: "September.2025", title:'Microsoft Copilot (Microsoft 365): Document snapshot in Word personalizes output', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497297'}
+,
+{ date: "September.2025", title:'Microsoft Copilot (Microsoft 365): Copilot Chat Tools Control', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497298'}
+,
+{ date: "September.2025", title:'Microsoft Copilot (Microsoft 365): Press and hold Win + C or Copilot key to activate voice on the Microsoft 365 Copilot app', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497849'}
+,
+{ date: "September.2025", title:'Microsoft Copilot (Microsoft 365): Scope prompts to specific Channels in Teams in Copilot Chat', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497915'}
+,
+{ date: "September.2025", title:' Microsoft Copilot (Microsoft 365): Update document sections from new sources', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497939'}
+,
+{ date: "September.2025", title:'Microsoft Copilot (Microsoft 365): Recent activity is part of Copilot\'s dynamic document snapshot in Word', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497941'}
+,
+{ date: "September.2025", title:'Microsoft 365 admin center: Agents usage report', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497999'}
+,
+{ date: "September.2025", title:'Microsoft Copilot (Microsoft 365): [Copilot Extensibility] Customize icons and display names for custom Copilot connectors', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=498909'}
+,
+{ date: "September.2025", title:'Microsoft Copilot (Microsoft 365): [Copilot Extensibility] Full refresh of custom connectors datasource', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=498910'}
+,
+{ date: "September.2025", title:'Microsoft Copilot (Microsoft 365): [Copilot Extensibility] Schema Recommendations for Custom Connectors in M365 Admin Center', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=498911'}
+,
+{ date: "September.2025", title:'Microsoft Copilot (Microsoft 365): [Copilot Extensibility] Simplified People Resolution for Custom Copilot Connectors', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=498912'}
+,
+{ date: "September.2025", title:'Microsoft Viva: Copilot Dashboard - Copilot Chat in Word, Excel, PowerPoint Metrics', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=498913'}
+,
+{ date: "September.2025", title:'Microsoft Copilot (Microsoft 365): [Copilot Extensibility] Connector Metadata Enrichment for Custom Copilot Connectors', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=498918'}
+,
+{ date: "September.2025", title:'Microsoft Copilot (Microsoft 365): [Copilot Extensibility] Delete Schema Properties via Copilot Connector APIs', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=498919'}
+,
+{ date: "September.2025", title:'Microsoft Copilot (Microsoft 365): Audio Overview customization in Copilot Notebooks', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=499150'}
+,
+{ date: "September.2025", title:'Microsoft Copilot (Microsoft 365): Enhanced personalization with memory in Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=499153'}
+,
+{ date: "September.2025", title:'Microsoft Viva: Enhancement to Copilot studio agents report ', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=499421'}
+,
+{ date: "September.2025", title:'Microsoft Copilot (Microsoft 365): Copilot Dashboard: Copilot Chat (Web) in Teams & Outlook metrics ', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=499426'}
+,
+{ date: "September.2025", title:'Microsoft Copilot (Microsoft 365): [Copilot Chat] Search based user RSVP status', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=499429'}
+,
+{ date: "September.2025", title:'Microsoft Copilot (Microsoft 365): [Copilot Chat] Email attachment summarization (Modern Attachments)', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=499657'}
+,
+{ date: "September.2025", title:'Microsoft Copilot (Microsoft 365): Harmful Content Protection Controls in Microsoft 365 Copilot Chat', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=499809'}
+,
+{ date: "September.2025", title:'Microsoft Copilot (Microsoft 365): Preview and chat with Microsoft Word, Excel, and PowerPoint files in the Microsoft 365 Copilot app on iPhone', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=500159'}
+,
+{ date: "September.2025", title:'Microsoft Copilot (Microsoft 365): Larger file upload support in Copilot Studio agent builder', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=500375'}
+,
+{ date: "September.2025", title:'Microsoft Copilot (Microsoft 365): Preview and chat with Microsoft Word, Excel, and PowerPoint files in the Microsoft 365 Copilot app on iPhone', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=500631'}
+,
+{ date: "September.2025", title:'Microsoft Copilot (Microsoft 365): Copilot Chat-centered experience for creating new documents in the Microsoft 365 Copilot app on iPhone and iPad ', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=500632'}
+,
+{ date: "September.2025", title:'Microsoft Copilot (Microsoft 365): Copilot Chat - Session Persistence Enhancement', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=500638'}
+,
+{ date: "September.2025", title:'Microsoft Teams: Facilitator can help manage tasks and create documents', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=500701'}
+,
+{ date: "September.2025", title:'Microsoft Copilot (Microsoft 365): Reference a Loop or Page when creating a presentation with Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=500862'}
+,
+{ date: "September.2025", title:'Microsoft Copilot (Microsoft 365): Reference a Loop or Page when creating a presentation with Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=500863'}
+,
+{ date: "September.2025", title:'Microsoft Copilot (Microsoft 365): Reference a Loop or Page when creating a presentation with Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=500864'}
+,
+{ date: "September.2025", title:'Microsoft Copilot (Microsoft 365): [Copilot Chat] Launch the full Microsoft 365 Copilot app when using Copilot Chat in the Microsoft 365 apps', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=500866'}
+,
+{ date: "September.2025", title:'Microsoft Copilot (Microsoft 365): Updates to video creation in Microsoft 365 Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=501560'}
+,
+{ date: "September.2025", title:'Microsoft Teams: Channel Agent', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=502526'}
+,
+{ date: "September.2025", title:'Microsoft Copilot (Microsoft 365): Permission details for agents in MAC', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=502617'}
+,
+{ date: "September.2025", title:'Microsoft Copilot (Microsoft 365): Image effects in Microsoft 365 Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=502844'}
+,
+{ date: "August.2025", title:'Microsoft Viva: Viva Learning - Copilot in Viva Learning', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=372245'}
+,
+{ date: "August.2025", title:'Microsoft Copilot (Microsoft 365): Referenced sources are cited in drafted content', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=380841'}
+,
+{ date: "August.2025", title:'Microsoft Copilot (Microsoft 365): Referenced sources are cited in drafted content', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=380842'}
+,
+{ date: "August.2025", title:'Microsoft Purview compliance portal: Insider Risk Management - Risky AI usage', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=394281'}
+,
+{ date: "August.2025", title:'Microsoft Viva: Viva Pulse - Pulse users can assign other users as delegates', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=479753'}
+,
+{ date: "August.2025", title:'Microsoft Copilot (Microsoft 365): Enhanced Copilot in Engage', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=481282'}
+,
+{ date: "August.2025", title:'Microsoft Copilot (Microsoft 365): SharePoint agent web part', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=481512'}
+,
+{ date: "August.2025", title:'Microsoft Copilot (Microsoft 365): Admins can easily manage orphaned agents with comprehensive lifecycle functionality', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=481519'}
+,
+{ date: "August.2025", title:'Microsoft Copilot (Microsoft 365): Drafting on a selection includes being able to reference files, people, emails, and meetings', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=485730'}
+,
+{ date: "August.2025", title:'Microsoft Copilot (Microsoft 365): Catch up on a summary of document comments in the top of your document', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=487851'}
+,
+{ date: "August.2025", title:'Microsoft Copilot (Microsoft 365): Copilot surfaces key statistics in the top of a document', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=487855'}
+,
+{ date: "August.2025", title:'Microsoft Purview Compliance Portal: Data Loss Prevention to restrict Microsoft 365 Copilot processing on emails with sensitivity labels', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=489221'}
+,
+{ date: "August.2025", title:'Microsoft Purview Compliance Portal: Microsoft Purview Data Security Posture Management for AI: Additional permissions for AI roles', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=489837'}
+,
+{ date: "August.2025", title:'Microsoft Copilot (Microsoft 365): Improved Python-powered answers in Copilot in Excel', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=490212'}
+,
+{ date: "August.2025", title:'Microsoft Edge: Microsoft 365 Copilot Chat Summarization in Edge for Business Context Menu', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=491473'}
+,
+{ date: "August.2025", title:'Microsoft Copilot (Microsoft 365): Copilot Chat now supports more file types in search grounding.', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=492268'}
+,
+{ date: "August.2025", title:'Microsoft Copilot (Microsoft 365): Microsoft 365 Copilot Chat - General Availability for the DoD environment', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=494511'}
+,
+{ date: "August.2025", title:'Microsoft Copilot (Microsoft 365): New file extension for Copilot pages', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=494834'}
+,
+{ date: "August.2025", title:'Microsoft Copilot (Microsoft 365): Microsoft 365 Copilot app for GCC-M environments', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=495116'}
+,
+{ date: "August.2025", title:'Microsoft 365 admin center: Usage reports - Copilot Chat - Usage intensity and new app coverage', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=495549'}
+,
+{ date: "August.2025", title:'Microsoft Edge: Introducing a new policy that can enable/disable Microsoft 365 Copilot Chat in Edge for Business from showing in the toolbar', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=496140'}
+,
+{ date: "August.2025", title:'Microsoft Copilot (Microsoft 365): Expanded Input Box on Copilot Chat', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=496597'}
+,
+{ date: "August.2025", title:'Microsoft Purview compliance portal: Data Loss Prevention - restrict Microsoft 365 Copilot processing on content with sensitivity labels', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497136'}
+,
+{ date: "August.2025", title:'Microsoft 365 admin center: Usage reports - Microsoft 365 Copilot search', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497545'}
+,
+{ date: "August.2025", title:'Microsoft Copilot (Microsoft 365): Researcher is in Microsoft Word', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497833'}
+,
+{ date: "August.2025", title:'Microsoft Copilot (Microsoft 365): Filtering Conversation History', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497910'}
+,
+{ date: "August.2025", title:'Microsoft Copilot (Microsoft 365): Easier access to Researcher in Microsoft Word', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497913'}
+,
+{ date: "August.2025", title:'Microsoft Copilot (Microsoft 365): Easier access to Researcher in Microsoft Word', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497914'}
+,
+{ date: "August.2025", title:'Microsoft Copilot (Microsoft 365): Microsoft 365 Copilot Chat for EDU customers ages 13 and older', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497916'}
+,
+{ date: "August.2025", title:'Microsoft Copilot (Microsoft 365): Recent activity is part of Copilot\'s dynamic document snapshot in Word', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497936'}
+,
+{ date: "August.2025", title:'Microsoft Copilot (Microsoft 365): Auto-update document sections from new sources', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497937'}
+,
+{ date: "August.2025", title:'Microsoft Copilot (Microsoft 365): Recent activity is part of Copilot\'s dynamic document snapshot in Word', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497940'}
+,
+{ date: "August.2025", title:'Microsoft Copilot (Microsoft 365): Summarize email with Copilot chat in Outlook', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=498320'}
+,
+{ date: "August.2025", title:'Microsoft Copilot (Microsoft 365): Unified Conversations (Chat History) List', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=498545'}
+,
+{ date: "August.2025", title:'Microsoft Copilot (Microsoft 365): Generative-AI skills for Create in Microsoft 365 Copilot app for Government Clouds', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=498548'}
+,
+{ date: "August.2025", title:'Microsoft Copilot (Microsoft 365): [Copilot Extensibility] View Index browser, schema and errors for Custom Connectors on MAC', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=498898'}
+,
+{ date: "August.2025", title:'Microsoft Copilot (Microsoft 365): On-Canvas Copilot and Private Preview in Shared Pages', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=499025'}
+,
+{ date: "August.2025", title:'Microsoft Copilot (Microsoft 365): Updated UI for the Copilot Chat Navigation Pane in Teams', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=499148'}
+,
+{ date: "August.2025", title:'Microsoft Copilot (Microsoft 365): Updated UI for Copilot Chat Navigation Pane in Outlook', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=499149'}
+,
+{ date: "August.2025", title:'Microsoft Copilot (Microsoft 365): Configurate format, style, and duration of Audio Overviews in Copilot Notebooks', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=499151'}
+,
+{ date: "August.2025", title:'Microsoft Copilot (Microsoft 365): Save an audio overview from Copilot Notebooks to OneDrive', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=499152'}
+,
+{ date: "August.2025", title:'Microsoft Copilot (Microsoft 365): Generating PPT grounded on a Copilot Page', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=499425'}
+,
+{ date: "August.2025", title:'Microsoft Copilot (Microsoft 365): [Copilot Chat] Email attachment summarization (Classic Attachments)', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=499656'}
+,
+{ date: "July.2025", title:'Microsoft Copilot (Microsoft 365): Referenced sources are cited in drafted content', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=380848'}
+,
+{ date: "July.2025", title:'Microsoft Purview compliance portal: Insider Risk Management - Enriching Insider risk management with Communication compliance as an indicator', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=382107'}
+,
+{ date: "July.2025", title:'Microsoft Purview compliance portal - Data Lifecycle Management - Separation of the Microsoft 365 Copilot retention policy location from Microsoft Teams chats', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=407897'}
+,
+{ date: "July.2025", title:'Microsoft Copilot (Microsoft 365): Ground prompts using SharePoint and OneDrive Folders', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=413109'}
+,
+{ date: "July.2025", title:'Microsoft Copilot (Microsoft 365): Ground prompts using SharePoint Sites', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=413110'}
+,
+{ date: "July.2025", title:'Microsoft Copilot (Microsoft 365): Graph Connectors in CIQ', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=413111'}
+,
+{ date: "July.2025", title:'Microsoft Copilot (Microsoft 365): Summarize files shared in Teams chat with Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=418564'}
+,
+{ date: "July.2025", title:'Microsoft Viva: Copilot Studio agents report in Viva Insights analyst workbench', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=472020'}
+,
+{ date: "July.2025", title:'Microsoft Purview compliance portal: Information Protection - Scan cold files in SharePoint and OneDrive for sensitive information', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=475062'}
+,
+{ date: "July.2025", title:'Microsoft Purview compliance portal: Department graph for Microsoft Purview Data Security Posture Management for AI', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=475377'}
+,
+{ date: "July.2025", title:'Microsoft Copilot (Microsoft 365): Pronoun Awareness in Microsoft 365 Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=478648'}
+,
+{ date: "July.2025", title:'Microsoft Purview compliance portal: Microsoft Purview capabilities for M365 Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=479083'}
+,
+{ date: "July.2025", title:'Microsoft Copilot (Microsoft 365): Work context suggestions in Copilot Chat ContextIQ menu', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=481135'}
+,
+{ date: "July.2025", title:'Microsoft Copilot (Microsoft 365): Catchup Skill (Copilot in Engage)', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=481283'}
+,
+{ date: "July.2025", title:'Microsoft Teams: Copilot only during call', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=482745'}
+,
+{ date: "July.2025", title:'Microsoft Copilot (Microsoft 365): Select some text, and instantly get helpful options from Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=483952'}
+,
+{ date: "July.2025", title:'Microsoft Copilot (Microsoft 365): Drafting on a selection includes being able to reference files, people, emails, and meetings', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=485729'}
+,
+{ date: "July.2025", title:'Microsoft Copilot (Microsoft 365):  Copilot Memory', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=486701'}
+,
+{ date: "July.2025", title:'Microsoft Teams: Custom Dictionary', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=487428'}
+,
+{ date: "July.2025", title:'Microsoft Copilot (Microsoft 365): Catch up on a summary of document comments in the top of your document', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=487849'}
+,
+{ date: "July.2025", title:'Microsoft Copilot (Microsoft 365): Microsoft 365 Copilot App - Ask M365 Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=487856'}
+,
+{ date: "July.2025", title:'Microsoft Viva: Search Skill (Copilot in Engage)', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=489220'}
+,
+{ date: "July.2025", title:'Microsoft Edge: Find on Page in Microsoft Edge for Business will soon be integrated with Microsoft 365 Copilot Chat ', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=489222'}
+,
+{ date: "July.2025", title:'Microsoft Purview Compliance Portal: Data Security Posture Management for AI - M365 Copilot view', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=489828'}
+,
+{ date: "July.2025", title:'Microsoft Purview Compliance Portal: Microsoft Purview Data Security Posture Management for AI: Web Search Query', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=489836'}
+,
+{ date: "July.2025", title:'Microsoft Copilot (Microsoft 365): Microsoft 365 Copilot Search', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=490778'}
+,
+{ date: "July.2025", title:'Microsoft Copilot (Microsoft 365): Access audio overviews from the top of your Word document', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=492615'}
+,
+{ date: "July.2025", title:'Microsoft Copilot (Microsoft 365): Reference an Excel file when creating a presentation with Copilot for PowerPoint', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=493731'}
+,
+{ date: "July.2025", title:'Microsoft Copilot (Microsoft 365): Reference an Excel file when creating a presentation with Copilot for PowerPoint', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=493732'}
+,
+{ date: "July.2025", title:'Microsoft Copilot (Microsoft 365): Reference an Excel file when creating a presentation with Copilot for PowerPoint', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=493733'}
+,
+{ date: "July.2025", title:'Microsoft Copilot (Microsoft 365): Access Copilot Chat in your Microsoft 365 apps', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=494830'}
+,
+{ date: "July.2025", title:'Microsoft Copilot (Microsoft 365): Use Copilot to rephrase text as desired through custom prompt in PowerPoint', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=494831'}
+,
+{ date: "July.2025", title:'Microsoft Copilot (Microsoft 365): Use Copilot to rephrase text as desired through custom prompt in PowerPoint', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=494832'}
+,
+{ date: "July.2025", title:'Microsoft Copilot (Microsoft 365): Use Copilot to rephrase text as desired through custom prompt in PowerPoint', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=494833'}
+,
+{ date: "July.2025", title:'Microsoft Copilot (Microsoft 365): Microsoft 365 Copilot app for DoD environments', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=494998'}
+,
+{ date: "July.2025", title:'Microsoft Copilot (Microsoft 365): Content suggestions in Word', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=495828'}
+,
+{ date: "July.2025", title:'Microsoft Copilot (Microsoft 365): Use ContextIQ file suggestions in Copilot Chat', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497112'}
+,
+{ date: "July.2025", title:'Microsoft 365 admin center: M365 Copilot Billing and usage - Budget limits', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497417'}
+,
+{ date: "July.2025", title:'Microsoft 365 Admin Center: Setting to pin M365 Copilot app to Windows taskbar', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=498221'}
+,
+{ date: "June.2025", title:'Microsoft Copilot (Microsoft 365): Scheduled prompts', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=401124'}
+,
+{ date: "June.2025", title:'Microsoft Viva: Viva Engage – Engage content surfacing in Copilot results', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=408167'}
+,
+{ date: "June.2025", title:'Microsoft Copilot (Microsoft 365): Easily write a prompt or choose quick actions from the Copilot icon in your Word doc', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=415448'}
+,
+{ date: "June.2025", title:'Microsoft Copilot (Microsoft 365): Easily write a prompt or choose quick actions from the Copilot icon in your Word doc', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=415449'}
+,
+{ date: "June.2025", title:'Microsoft Purview compliance portal: Data Loss Prevention - Data Loss Prevention to restrict Microsoft 365 Copilot processing on content with sensitivity labels', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=423483'}
+,
+{ date: "June.2025", title:'Microsoft Copilot (Microsoft 365) Microsoft 365 Copilot Chat general availability for GCC', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=464984'}
+,
+{ date: "June.2025", title:'Microsoft Copilot (Microsoft 365): Create the perfect banner for your document with Copilot and Designer', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=470986'}
+,
+{ date: "June.2025", title:'Microsoft Copilot (Microsoft 365): Kickstart your document with contextual prompts', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=470997'}
+,
+{ date: "June.2025", title:'Microsoft Copilot (Microsoft 365): Copilot extensibility – Developers can create, test and update custom engine agents to run in Microsoft 365 Copilot and Teams', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=474439'}
+,
+{ date: "June.2025", title:'Microsoft Copilot (Microsoft 365): Copilot uses enterprise assets hosted on SharePoint OAL when creating presentations with Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=475051'}
+,
+{ date: "June.2025", title:'Microsoft Copilot (Microsoft 365): Copilot uses Enterprise assets hosted on Templafy when creating presentations with Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=475055'}
+,
+{ date: "June.2025", title:'Microsoft Copilot (Microsoft 365): Copilot uses enterprise assets hosted on SharePoint OAL when creating presentations with Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=475056'}
+,
+{ date: "June.2025", title:'Microsoft Copilot (Microsoft 365): Copilot uses enterprise assets hosted on SharePoint OAL when creating presentations with Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=475064'}
+,
+{ date: "June.2025", title:'Microsoft Copilot (Microsoft 365): Dictate your prompts in Copilot Chat', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=475968'}
+,
+{ date: "June.2025", title:'Microsoft Copilot (Microsoft 365): Developers building agents in Azure AI Foundry can ground their agent in files stored in SharePoint', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=476496'}
+,
+{ date: "June.2025", title:'Microsoft Copilot (Microsoft 365): Copilot uses Enterprise assets hosted on Templafy when creating presentations with Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=478643'}
+,
+{ date: "June.2025", title:'Microsoft Copilot (Microsoft 365): Copilot uses Enterprise assets hosted on Templafy when creating presentations with Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=478644'}
+,
+{ date: "June.2025", title:'Microsoft Copilot (Microsoft 365): Copilot Chat now offers meeting series selection on CIQ Menu', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=481137'}
+,
+{ date: "June.2025", title:'Microsoft Copilot (Microsoft 365): Quickly start a chat with Copilot from anywhere on your PC', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=482544'}
+,
+{ date: "June.2025", title:'Microsoft Copilot (Microsoft 365): Catch up on a summary of document comments in the top of your document', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=483519'}
+,
+{ date: "June.2025", title:'Microsoft Copilot (Microsoft 365): UX Transparency for Web Queries', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=483965'}
+,
+{ date: "June.2025", title:'Microsoft Teams: Copilot summary for transferred calls', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=484123'}
+,
+{ date: "June.2025", title:'Microsoft Copilot (Microsoft 365): Copilot Pages in Government Clouds', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=485178'}
+,
+{ date: "June.2025", title:'Microsoft Copilot (Microsoft 365): Copilot Chat module UI refresh', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=485716'}
+,
+{ date: "June.2025", title:'Microsoft Copilot (Microsoft 365): Receive coaching on your writing in Copilot in Word', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=485719'}
+,
+{ date: "June.2025", title:'Microsoft Copilot (Microsoft 365): People Skills is now available ', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=485726'}
+,
+{ date: "June.2025", title:'Microsoft Copilot (Microsoft 365): Locate your Copilot Pages in Copilot Chat navigation pane', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=485728'}
+,
+{ date: "June.2025", title:'Microsoft Copilot (Microsoft 365): Copilot Prompt Gallery - Share a prompt with a co-worker', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=486949'}
+,
+{ date: "June.2025", title:'Microsoft Copilot (Microsoft 365): Copilot surfaces key statistics in the top of a document', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=487850'}
+,
+{ date: "June.2025", title:'Microsoft Copilot (Microsoft 365): [Copilot Extensibility] [b.2.3] Governance control for agents with file uploaded as knowledge source', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=489214'}
+,
+{ date: "June.2025", title:'Microsoft Copilot (Microsoft 365): Copilot in Excel with Python for GCC', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=489216'}
+,
+{ date: "June.2025", title:'Microsoft Copilot (Microsoft 365): Copilot in Excel with Python for GCC High', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=489217'}
+,
+{ date: "June.2025", title:'Microsoft Copilot (Microsoft 365): Language expansion coming in Microsoft 365 Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=489218'}
+,
+{ date: "June.2025", title:'Microsoft Teams: Interpreter agent available in Teams', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=490740'}
+,
+{ date: "June.2025", title:'Microsoft Copilot (Microsoft 365): Create a presentation with Copilot from the PowerPoint backstage view', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=491469'}
+,
+{ date: "June.2025", title:'Microsoft Copilot: Microsoft 365 Copilot Interaction Export API', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=491631'}
+,
+{ date: "June.2025", title:'Microsoft Copilot (Microsoft 365): Reference up to 5 files when creating a presentation with Copilot for PowerPoint', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=491635'}
+,
+{ date: "June.2025", title:'Microsoft Copilot (Microsoft 365): Reference up to 5 files when creating a presentation with Copilot for PowerPoint', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=491636'}
+,
+{ date: "June.2025", title:'Microsoft Copilot (Microsoft 365): Reference up to 5 files when creating a presentation with Copilot for PowerPoint', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=491637'}
+,
+{ date: "June.2025", title:'Microsoft Copilot (Microsoft 365): Add images to your Copilot prompts in M365 applications chat in government clouds', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=493730'}
+,
+{ date: "June.2025", title:'Microsoft Copilot (Microsoft 365): Copilot Extensibility - Hebrew support in Agent builder', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=494152'}
+,
+{ date: "June.2025", title:'Microsoft Copilot (Microsoft 365): Your AI assistant in the DoD environment', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=494508'}
+,
+{ date: "June.2025", title:'Microsoft 365 Admin Center: Copilot Search management and insights', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=495460'}
+,
+{ date: "June.2025", title:'Outlook: Copilot Prepare for Meeting in Calendar', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=495461'}
+,
+{ date: "May.2025", title:'Microsoft Teams: Ability to Stop Copilot while it is generating a response', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=325948'}
+,
+{ date: "May.2025", title:'Outlook: Custom Instructions for draft with Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=366572'}
+,
+{ date: "May.2025", title:'Microsoft Copilot (Microsoft 365): Search past sessions in Copilot Chat ', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=388371'}
+,
+{ date: "May.2025", title:'OneNote: Copilot Notebooks inside OneNote', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=464995'}
+,
+{ date: "May.2025", title:'Microsoft Copilot (Microsoft 365): Copilot extensibility – Developers can build custom engine agents with the Microsoft 365 Agents SDK', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=474445'}
+,
+{ date: "May.2025", title:'Microsoft Copilot (Microsoft 365): Copilot extensibility – Ability to use the Graph connector selector when using Teams Toolkit', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=474446'}
+,
+{ date: "May.2025", title:'Microsoft Copilot (Microsoft 365): Copilot Extensibility -  Automatic project scaffolding in Teams Toolkit for building Graph connectors', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=474447'}
+,
+{ date: "May.2025", title:'Microsoft Copilot (Microsoft 365): Copilot extensibility – Embedded Knowledge capability support for declarative agents.', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=474448'}
+,
+{ date: "May.2025", title:'Microsoft Copilot (Microsoft 365): Copilot extensibility – Developers can use TypeSpec as an authoring experience ', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=474449'}
+,
+{ date: "May.2025", title:'Microsoft Copilot (Microsoft 365): Suggestions for slide templates as you work', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=475053'}
+,
+{ date: "May.2025", title:'Outlook: Summarize email attachments with Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=475249'}
+,
+{ date: "May.2025", title:'Microsoft Copilot (Microsoft 365): Read aloud available in Microsoft 365 Copilot Chat', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=475967'}
+,
+{ date: "May.2025", title:'Microsoft Copilot (Microsoft 365): Support for summarization of very long documents', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=478645'}
+,
+{ date: "May.2025", title:'Microsoft Copilot (Microsoft 365): Audio summary of your file ', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=478649'}
+,
+{ date: "May.2025", title:'Microsoft Teams: Copilot in Teams meetings responses can be exported to Word and Excel', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=481352'}
+,
+{ date: "May.2025", title:'Microsoft Copilot (Microsoft 365): Copilot Extensibility - Admins can manage Copilot extensibility under Copilot tab in Microsoft 365 admin center', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=481829'}
+,
+{ date: "May.2025", title:'Microsoft Copilot (Microsoft 365): [Copilot Extensibility] Discover agent in Microsoft Copilot on iOS/Android', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=482545'}
+,
+{ date: "May.2025", title:'Microsoft Copilot (Microsoft 365): Drafting on a selection includes being able to reference files, emails, and meetings', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=483949'}
+,
+{ date: "May.2025", title:'Microsoft Copilot (Microsoft 365): Fix all spelling and grammar issues with Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=483954'}
+,
+{ date: "May.2025", title:'Microsoft Copilot (Microsoft 365): Designer is now part of Copilot, enhanced with new template and slide suggestions', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=484843'}
+,
+{ date: "May.2025", title:'Microsoft Copilot (Microsoft 365): Easily select a template while you create a new PowerPoint presentation with Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=485179'}
+,
+{ date: "May.2025", title:'Microsoft Copilot (Microsoft 365): Easily select a template while you create a new PowerPoint presentation with Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=485180'}
+,
+{ date: "May.2025", title:'Microsoft Copilot (Microsoft 365): Easily select a template while you create a new PowerPoint presentation with Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=485181'}
+,
+{ date: "May.2025", title:'Microsoft Copilot (Microsoft 365): Copilot advanced text analysis in Excel', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=485188'}
+,
+{ date: "May.2025", title:'Microsoft Copilot (Microsoft 365): Create Copilot Pages on your mobile phone', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=485720'}
+,
+{ date: "May.2025", title:'Microsoft Copilot (Microsoft 365): Create Copilot Pages from Copilot Chat on your mobile phone', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=485721'}
+,
+{ date: "May.2025", title:'Microsoft Copilot (Microsoft 365): Reference People from your enterprise in Copilot in Word', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=485722'}
+,
+{ date: "May.2025", title:'Microsoft Copilot (Microsoft 365): Receive coaching on your writing in Copilot in Word', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=485723'}
+,
+{ date: "May.2025", title:'Microsoft Copilot (Microsoft 365): Quickly launch the Microsoft 365 Copilot app on your iOS device', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=485724'}
+,
+{ date: "May.2025", title:'Microsoft Viva: Copilot Dashboard Trendline Additions', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=485727'}
+,
+{ date: "May.2025", title:'Microsoft Purview compliance portal: Data Security Posture Management for AI - Data Assessments', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=485767'}
+,
+{ date: "May.2025", title:'Microsoft Purview compliance portal: Data Security Posture Management for AI', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=485771'}
+,
+{ date: "May.2025", title:'Microsoft Copilot (Microsoft 365): Metadata for Shared agent management in Microsoft 365 admin center', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=485772'}
+,
+{ date: "May.2025", title:'Microsoft Copilot (Microsoft 365): Copilot Pages module on Microsoft 365 Copilot mobile app', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=486857'}
+,
+{ date: "May.2025", title:'SharePoint: M365/SharePoint Agent Insights for SharePoint Administrators', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=486861'}
+,
+{ date: "May.2025", title:'Microsoft Copilot (Microsoft 365): Copilot can generate an audio overview of your Word document', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=487423'}
+,
+{ date: "May.2025", title:'Microsoft Copilot (Microsoft 365): Realtime voice interactions in Word and PowerPoint', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=487852'}
+,
+{ date: "May.2025", title:'Microsoft Copilot (Microsoft 365): Copilot can generate an audio overview of a notebook', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=487854'}
+,
+{ date: "May.2025", title:'Microsoft Copilot (Microsoft 365): Reference a TXT file when creating a presentation with Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=488794'}
+,
+{ date: "May.2025", title:'Microsoft Copilot (Microsoft 365): Reference a TXT file when creating a presentation with Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=488795'}
+,
+{ date: "May.2025", title:'Microsoft Copilot (Microsoft 365): Reference a TXT file when creating a presentation with Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=488796'}
+,
+{ date: "May.2025", title:'Microsoft Copilot (Microsoft 365): Copilot generates the new presentation in a new file when starting from an existing presentation', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=489450'}
+,
+{ date: "May.2025", title:'Microsoft Copilot (Microsoft 365): Copilot generates the new presentation in a new file when starting from an existing presentation', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=489451'}
+,
+{ date: "May.2025", title:'Microsoft Copilot (Microsoft 365): Copilot generates the new presentation in a new file when starting from an existing presentation', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=489452'}
+,
+{ date: "May.2025", title:'Microsoft Copilot (Microsoft 365): Updated UI for Microsoft 365 Copilot App', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=490155'}
+,
+{ date: "May.2025", title:'Microsoft Copilot (Microsoft 365): Sharing with Copilot summary - Now supporting PowerPoint, Excel, PDFs, Images, and protected files', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=490156'}
+,
+{ date: "May.2025", title:'Microsoft Copilot (Microsoft 365): Updates to Copilot Chat response output', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=490547'}
+,
+{ date: "May.2025", title:'Microsoft Copilot (Microsoft 365): Simplified Input box update in Copilot Chat', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=490548'}
+,
+{ date: "May.2025", title:'Microsoft Copilot (Microsoft 365): Open Copilot Pages as a Word document', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=490550'}
+,
+{ date: "May.2025", title:'Microsoft Copilot (Microsoft 365): OneNote Pages in M365 Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=490722'}
+,
+{ date: "May.2025", title:'Microsoft Copilot (Microsoft 365): The Create Module in the M365 Copilot app', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=490760'}
+,
+{ date: "May.2025", title:'Microsoft Copilot (Microsoft 365): Add licensed stock images, generate images and add brand images from a SharePoint OAL in Word and PowerPoint for GCC environment', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=492612'}
+,
+{ date: "April.2025", title:'Outlook: Prioritize my inbox by Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=411302'}
+,
+{ date: "April.2025", title:'Microsoft Purview compliance portal: Microsoft Purview AI Hub – Data Assessments', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=464997'}
+,
+{ date: "April.2025", title:'OneDrive: Create a presentation from a Word file', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=469501'}
+,
+{ date: "April.2025", title:'OneDrive: Convert Copilot response into a Word file', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=469502'}
+,
+{ date: "April.2025", title:'Microsoft Copilot (Microsoft 365): Copilot in Forms can help monitor response collection and insights', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=470604'}
+,
+{ date: "April.2025", title:'Microsoft Copilot (Microsoft 365): Clipchamp introduces Copilot-powered video creation from a prompt', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=471441'}
+,
+{ date: "April.2025", title:'Microsoft Teams: Meeting organizers can enable transcription in multilingual meetings (Copilot and Teams Premium)', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=473434'}
+,
+{ date: "April.2025", title:'Microsoft Copilot (Microsoft 365): Copilot in Excel with Python for Mac', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=473456'}
+,
+{ date: "April.2025", title:'Microsoft Copilot (Microsoft 365): Copilot in Forms can now reference files to help generate drafts', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=474658'}
+,
+{ date: "April.2025", title:'Microsoft Copilot (Microsoft 365): Copilot in Forms has been refreshed to help users better refine and edit their forms', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=474659'}
+,
+{ date: "April.2025", title:'Microsoft Copilot (Microsoft 365): Suggestions for slide templates as you work', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=475054'}
+,
+{ date: "April.2025", title:'Microsoft Copilot (Microsoft 365): Create a PowerPoint slide from a file or prompt', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=477374'}
+,
+{ date: "April.2025", title:'Microsoft Copilot (Microsoft 365): Support for summarization of very long documents', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=478646'}
+,
+{ date: "April.2025", title:'Microsoft Viva: Viva Learning - Copilot Academy availability to all Microsoft 365 users', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=479415'}
+,
+{ date: "April.2025", title:'Microsoft Copilot (Microsoft 365): Rich artifacts in Copilot Pages', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=481134'}
+,
+{ date: "April.2025", title:'Microsoft Teams: Translated Intelligent meeting recap for multilingual meetings (Copilot and Teams Premium)', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=481144'}
+,
+{ date: "April.2025", title:'Microsoft 365 admin center: Usage reports - Add Copilot.cloud.microsoft/Teams/Outlook usage for Microsoft 365 Copilot Chat usage report', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=482199'}
+,
+{ date: "April.2025", title:'Microsoft 365 Copilot: Work from your recent prompts in Draft with Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=483821'}
+,
+{ date: "April.2025", title:'PowerPoint: Designer is now part of Copilot, enhanced with new template and slide Suggestions.', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=483882'}
+,
+{ date: "April.2025", title:'Microsoft Copilot (Microsoft 365): Copilot Prompt Gallery - Share a prompt to a Microsoft Team\'s team', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=483951'}
+,
+{ date: "April.2025", title:'Microsoft Copilot (Microsoft 365): Support large documents in Word Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=483955'}
+,
+{ date: "April.2025", title:'Microsoft Copilot (Microsoft 365): Sessions Grouped by Time frame', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=486464'}
+,
+{ date: "April.2025", title:'Microsoft Copilot (Microsoft 365): AI Administrator will be able to manage Microsoft Copilot Dashboard settings.', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=486700'}
+,
+{ date: "March.2025", title:'Microsoft Teams: Copilot in Meetings will suggest follow up questions to ask it', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=325858'}
+,
+{ date: "March.2025", title:'Microsoft Copilot (Microsoft 365): Recap changes over more time', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=369865'}
+,
+{ date: "March.2025", title:'Microsoft Copilot (Microsoft 365): Copilot in Excel - Graph Grounded Chat', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=375510'}
+,
+{ date: "March.2025", title:'Microsoft Copilot (Microsoft 365): LLM generated titles for Copilot Chat sessions', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=388373'}
+,
+{ date: "March.2025", title:'Microsoft Copilot (Microsoft 365): Copilot takes emails and meetings into account while drafting content in Word', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=405753'}
+,
+{ date: "March.2025", title:'Microsoft Copilot (Microsoft 365): Use Copilot to search for answers from the web', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=406555'}
+,
+{ date: "March.2025", title:'Microsoft Viva: Viva Pulse - Generate Pulse summary with Microsoft Copilot in Viva Pulse ', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=407863'}
+,
+{ date: "March.2025", title:'Microsoft Viva: External benchmarks in Advanced Insights', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=408544'}
+,
+{ date: "March.2025", title:'Microsoft Purview compliance portal: Communication Compliance - Detect prompt injection attacks and mentions of protected materials in GenAI prompts and responses', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=422334'}
+,
+{ date: "March.2025", title:'Microsoft Viva: Microsoft Copilot Dashboard Scope Filter enhancements', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=429870'}
+,
+{ date: "March.2025", title:'Microsoft Copilot (Microsoft 365): Create with Copilot in Excel generates templates and tables', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=429873'}
+,
+{ date: "March.2025", title:'Microsoft Copilot (Microsoft 365): BizChat - Edge contextual capabilities in Business Chat work mode', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=468884'}
+,
+{ date: "March.2025", title:'OneDrive: Catch up with Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=469498'}
+,
+{ date: "March.2025", title:'OneDrive: Ask Copilot questions on meeting recordings', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=469500'}
+,
+{ date: "March.2025", title:'Microsoft Copilot (Microsoft 365): Copilot Analytics available in Microsoft 365 Copilot ', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=471002'}
+,
+{ date: "March.2025", title:'Microsoft Copilot (Microsoft 365): Copilot in Excel with Python for Web', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=473459'}
+,
+{ date: "March.2025", title:'Microsoft Copilot (Microsoft 365): Copilot extensibility – Copilot Chat developer mode', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=474450'}
+,
+{ date: "March.2025", title:'Microsoft Copilot (Microsoft 365): Copilot extensibility – Developers can use Kiota as an API plugin generation tool', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=474451'}
+,
+{ date: "March.2025", title:'Microsoft Purview compliance portal: Microsoft Purview capabilities for M365 Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=479082'}
+,
+{ date: "March.2025", title:'Microsoft Copilot (Microsoft 365):  Microsoft Copilot Chat and Microsoft 365 Copilot - Users can insert cloud files in Copilot chat prompts. ', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=481139'}
+,
+{ date: "March.2025", title:'Microsoft Copilot (Microsoft 365): Ask Copilot to rewrite text as a list', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=483002'}
+,
+{ date: "March.2025", title:'Microsoft Copilot (Microsoft 365): Ask Copilot to rewrite text as a list', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=483003'}
+,
+{ date: "March.2025", title:'Microsoft Copilot (Microsoft 365): Ask Copilot to rewrite text as a list', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=483004'}
+,
+{ date: "March.2025", title:'Microsoft Copilot (Microsoft 365): M365 Copilot for GCC Environments: Wave 2 ', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=483357'}
+,
+{ date: "March.2025", title:'Microsoft Copilot (Microsoft 365): Copilot Pages in Government Clouds', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=485177'}
+,
+{ date: "February.2025", title:'Microsoft Copilot (Microsoft 365): Video creation in Copilot Visual Creator powered by Clipchamp', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=402192'}
+,
+{ date: "February.2025", title:'Microsoft Viva: Viva Learning - AI & Copilot Resources provider', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=412064'}
+,
+{ date: "February.2025", title:'Microsoft Viva: Viva Learning - Ability to duplicate Microsoft Copilot Academy', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=412065'}
+,
+{ date: "February.2025", title:'Microsoft Copilot (Microsoft 365): Write a prompt for selected portions of text in Word', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=415418'}
+,
+{ date: "February.2025", title:'OneNote: Copilot Chat on OneNote for web and in Teams', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=417005'}
+,
+{ date: "February.2025", title:'SharePoint: Authoring Copilot in SharePoint', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=418126'}
+,
+{ date: "February.2025", title:'Microsoft 365 app: Microsoft Places - Space analytics with Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=422718'}
+,
+{ date: "February.2025", title:'Microsoft Teams: Copilot agents in Teams group chats', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=464988'}
+,
+{ date: "February.2025", title:'OneDrive: Ask Copilot questions about images', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=469499'}
+,
+{ date: "February.2025", title:'Microsoft 365: Updated settings for the Microsoft 365 app on Windows', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=471004'}
+,
+{ date: "February.2025", title:'Microsoft Copilot (Microsoft 365): Copilot in Excel with Python Language Expansion for Windows', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=473458'}
+,
+{ date: "February.2025", title:'Word: Choose the level of detail for summaries when documents are opened', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=473462'}
+,
+{ date: "February.2025", title:'Microsoft Copilot (Microsoft 365): Copilot in Teams meetings for GCC', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=476072'}
+,
+{ date: "February.2025", title:'Microsoft Copilot (Microsoft 365): Sessions Grouped by Time frame', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=477358'}
+,
+{ date: "February.2025", title:'Microsoft Copilot (Microsoft 365): Updates to Copilot Chat prompt input box', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=478654'}
+,
+{ date: "January.2025", title:'Microsoft 365 admin center: AI adoption score', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=185700'}
+,
+{ date: "January.2025", title:'Outlook: Prepare for Meetings with Copilot in the new Outlook for Windows and web', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=374723'}
+,
+{ date: "January.2025", title:'Microsoft Copilot (Microsoft 365): Copilot Prompt Gallery - Share a prompt to a Microsoft Teams team ', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=391636'}
+,
+{ date: "January.2025", title:'Outlook: Chat with Copilot in Outlook for Mac', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=395788'}
+,
+{ date: "January.2025", title:'Microsoft Viva: Viva Engage – Questions surfacing in Copilot results', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=408166'}
+,
+{ date: "January.2025", title:'Microsoft Viva - Copilot dashboard Exclusion List through Entra(AAD) groups', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=414515'}
+,
+{ date: "January.2025", title:'Microsoft Copilot (Microsoft 365): Write a prompt for selected portions of text in Word', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=415419'}
+,
+{ date: "January.2025", title:'Microsoft Copilot (Microsoft 365): Take notes with Copilot in OneNote directly in the flow from the canvas', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=417475'}
+,
+{ date: "January.2025", title:'Microsoft 365 admin center: Microsoft 365 Copilot suggested users license assignment flow', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=417484'}
+,
+{ date: "January.2025", title:'Microsoft Copilot (Microsoft 365): Charts, Graphs and Data Analysis in Copilot for Microsoft 365', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=420363'}
+,
+{ date: "January.2025", title:'Microsoft Teams: In-meeting Chat, Copilot, and Notes panes can be popped out from the meeting window', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=421607'}
+,
+{ date: "January.2025", title:'Microsoft Copilot (Microsoft 365): Updated Context IQ menu in Business Chat', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=422307'}
+,
+{ date: "January.2025", title:'Microsoft Copilot (Microsoft 365): BizChat - Copilot agents available in Business Chat web mode', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=422315'}
+,
+{ date: "January.2025", title:'Microsoft Teams: Microsoft Copilot (Microsoft 365) – AI enabled file summaries on Teams mobile', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=422318'}
+,
+{ date: "January.2025", title:'Microsoft Teams: Copilot in Teams now available for multitenant organizations', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=423474'}
+,
+{ date: "January.2025", title:'Microsoft Copilot (Microsoft 365):  Discover, acquire, and manage agents through in-app store in Word and PowerPoint ', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=433687'}
+,
+{ date: "January.2025", title:'Microsoft Copilot (Microsoft 365): Updated welcome screen for the Microsoft 365 app on Windows', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=471447'}
+,
+{ date: "January.2025", title:'Microsoft Copilot (Microsoft 365): Enrichment of Messages in Business Chat', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=472915'}
+,
+{ date: "January.2025", title:'Microsoft 365 admin center: Enhancements to Copilot admin page', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=472918'}
+,
+{ date: "January.2025", title:'Word: Chat with Copilot about selected text', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=473441'}
+,
+{ date: "January.2025", title:'Word: Choose the level of detail for summaries when documents are opened', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=473445'}
+,
+{ date: "December.2024", title:'OneNote: Copilot Chat on OneNote for iPad', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=395787'}
+,
+{ date: "December.2024", title:'OneNote: OneNote Copilot on Mac', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=397097'}
+,
+{ date: "December.2024", title:'Microsoft Viva: Copilot for Advanced Insights App', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=399924'}
+,
+{ date: "December.2024", title:'Microsoft Copilot (Microsoft 365): Copilot Prompt Gallery - Share a prompt with a co-worker', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=400710'}
+,
+{ date: "December.2024", title:'Microsoft Copilot (Microsoft 365): Prompt suggestions in Copilot chat', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=409962'}
+,
+{ date: "December.2024", title:'Microsoft Viva: Viva Insights- Copilot for Sales Metrics & PBI Report', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=410201'}
+,
+{ date: "December.2024", title:'Microsoft Copilot (Microsoft 365): Microsoft 365 Copilot GCC general availability', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=415097'}
+,
+{ date: "December.2024", title:'Microsoft Viva: Viva Insights - New Copilot adoption metrics and completing total actions taken', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=418379'}
+,
+{ date: "December.2024", title:'Microsoft Copilot (Microsoft 365): Share prompts with others in Business Chat and Copilot Lab', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=423482'}
+,
+{ date: "December.2024", title:'Microsoft Copilot (Microsoft 365): Copilot Extensibility – Admins have transparency on granular metadata for agents', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=429877'}
+,
+{ date: "December.2024", title:'Microsoft Viva: Viva Insights - New Copilot with enterprise data protection prompt metric', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=467249'}
+,
+{ date: "December.2024", title:'Microsoft Copilot (Microsoft 365): Read Aloud support added to Copilot chat responses', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=470990'}
+,
+{ date: "November.2024", title:'Microsoft Purview compliance portal: AI hub in Microsoft Purview', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=188510'}
+,
+{ date: "November.2024", title:'Microsoft 365 admin center: New usage reports for Microsoft Copilot with enterprise data protection', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=377676'}
+,
+{ date: "November.2024", title:'Outlook: Outlook themes generated by Microsoft Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=394682'}
+,
+{ date: "November.2024", title:'SharePoint: Site ownership policy', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=396172'}
+,
+{ date: "November.2024", title:'Microsoft Copilot (Microsoft 365): Copilot in Excel with Python', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=396728'}
+,
+{ date: "November.2024", title:'Microsoft Copilot (Microsoft 365): Copilot inference and evaluation policy for Copilot in Teams meetings', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=411568'}
+,
+{ date: "November.2024", title:'SharePoint: Introducing archival and other enforcement actions with inactive site lifecycle management policy', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=412940'}
+,
+{ date: "November.2024", title:'SharePoint: SharePoint site content & policy comparison using AI', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=415167'}
+,
+{ date: "November.2024", title:'Microsoft Copilot (Microsoft 365): Quick rewrite, summarize, and to do actions with Copilot on OneNote canvas', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=417476'}
+,
+{ date: "November.2024", title:'Microsoft Copilot (Microsoft 365): UX Transparency for Web Queries', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=419810'}
+,
+{ date: "November.2024", title:'Microsoft Copilot (Microsoft 365): Copilot web grounding now available in the Copilot app in Teams and Outlook', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=420330'}
+,
+{ date: "November.2024", title:'Microsoft 365 app: Microsoft Places - Managed booking with Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=422721'}
+,
+{ date: "November.2024", title:'Microsoft 365 app: Microsoft Places', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=433684'}
+,
+{ date: "October.2024", title:'Microsoft Viva: Viva Pulse - Integration into Microsoft Copilot Dashboard from Viva Insights', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=380477'}
+,
+{ date: "October.2024", title:'Microsoft Copilot (Microsoft 365): Get started on a draft immediately with example prompts', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=399919'}
+,
+{ date: "October.2024", title:'Microsoft Copilot (Microsoft 365): Language expansion coming in M365 Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=411778'}
+,
+{ date: "October.2024", title:'Sharepoint: Sharepoint Agents', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=416297'}
+,
+{ date: "October.2024", title:'Microsoft Copilot (Microsoft 365): Improved template support when you create a presentation with Copilot', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=417060'}
+,
+{ date: "October.2024", title:'Microsoft Viva: Viva Insights - New Business Chat prompts submitted through Teams ', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=418380'}
+,
+{ date: "September.2024", title:'Outlook: Select specific pieces of text in an email and use Copilot to rewrite them', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=392327'}
+,
+{ date: "September.2024", title:'Outlook: New Copilot Compose experience', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=397092'}
+,
+{ date: "September.2024", title:'Word: Get started on a draft immediately with example prompts', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=399918'}
+,
+{ date: "September.2024", title:'Microsoft Copilot (Microsoft 365): Receive coaching on your writing in Copilot in Word', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=399923'}
+,
+{ date: "September.2024", title:'Microsoft Copilot (Microsoft 365): Add brand images in M365 Copilot from SharePoint organization asset libraries ', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=406170'}
+,
+{ date: "September.2024", title:'Microsoft Copilot (Microsoft 365): Microsoft Copilot with enterprise data protection', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=412356'}
+,
+{ date: "September.2024", title:'Microsoft Viva: Viva Insights - Integration of Glint and Pulse results into Copilot Dashboard', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=412358'}
+,
+{ date: "August.2024", title:'Microsoft Copilot (Microsoft 365): Copilot in Forms can generate quizzes from provided materials', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=389149'}
+,
+{ date: "August.2024", title:'Microsoft Copilot (Microsoft 365): Ground prompts on local files when using Copilot with Graph-grounded chat', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=392010'}
+,
+{ date: "August.2024", title:'Microsoft Copilot (Microsoft 365): Copilot in Forms aids students with step-by-step solutions for quiz questions', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=392843'}
+,
+{ date: "August.2024", title:'Word: Automatic summary of documents on file-open in Word', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=397096'}
+,
+{ date: "August.2024", title:'Microsoft Copilot (Microsoft 365): Copilot for PowerPoint will help you build your story\'s narrative', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=398967'}
+,
+{ date: "August.2024", title:'Microsoft Copilot (Microsoft 365): Copilot in Excel support for formula data summaries in rows and cells', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=398989'}
+,
+{ date: "August.2024", title:'Microsoft Copilot (Microsoft 365): Copilot in Excel - Custom chart and PivotTable creation', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=399423'}
+,
+{ date: "August.2024", title:'Microsoft Copilot (Microsoft 365): Copilot in Excel - Summarize text columns', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=399425'}
+,
+{ date: "August.2024", title:'Microsoft Copilot (Microsoft 365): Automatic summary of documents on file-open in Word', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=399921'}
+,
+{ date: "July.2024", title:'Microsoft Loop: Copilot-assisted Loop Page Creation', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=141443'}
+,
+{ date: "July.2024", title:'Microsoft Copilot (Microsoft 365): Excel – Formula Conditional Formatting', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=392454'}
+,
+{ date: "June.2024", title:'Microsoft Teams: Meeting organizers can manage who can record and transcribe meetings (Premium)', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=116819'}
+,
+{ date: "May.2024", title:'Microsoft Copilot (Microsoft 365): Copilot in Loop available in Loop components in Teams and Outlook', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=393539'}
+,
+{ date: "April.2024", title:'Microsoft Copilot (Microsoft 365): Whiteboard Copilot – First run experience ', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=392455'}
+,
+{ date: "February.2024", title:'Microsoft 365: "Help me create" in Microsoft 365', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=383010'}
+,
+{ date: "January.2024", title:'Reference data from the Microsoft cloud when drafting with Copilot in Word', url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=373735'}
+    ]);
+</script>
+
+
+</body>
+</html>
