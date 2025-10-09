@@ -59,7 +59,7 @@ $timeline=""
 $resultsArray = @()
 
 if($countOfItems -eq 1){ #if result = 1 it returns a PSCustomObject object instead of an array
-	$resultsArray+= $result
+	$resultsArray+= $result.value
 }elseif ($countOfItems -gt 1)
 {
 	$resultsArray=$result.value
