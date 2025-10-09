@@ -26,7 +26,10 @@
 #region Variables
 # ================
 
-$products=Import-Csv -Path ./_data/products.csv
+$dataFolderPath = "./_data"
+$roadmapFolderPath = "./roadmap"
+$productsCSV="products.csv"
+$roadmapTemplateFilename="RoadmapTemplate.html"
 $countOfItems=0
 
 # ================
@@ -36,6 +39,8 @@ $countOfItems=0
 # ================
 #region Processing
 # ================
+
+$products=Import-Csv -Path (Join-Path $dataFolderPath $productsCSV)
 
 foreach($product in $products){
 
@@ -49,4 +54,49 @@ $countOfItems = if ($result.value) { $result.value.Count } else { $result.Count 
 
 Write-Output $countOfItems +" items"
 
+$counter=0
+$timeline=""
+$resultsArray = @()
+
+if($countOfItems -eq 1){ #if result = 1 it returns a PSCustomObject object instead of an array
+	$resultsArray+= $result
+}elseif ($countOfItems -gt 1)
+{
+	$resultsArray=$result.value
 }
+
+	foreach($item in $resultsArray){
+		
+		$counter++
+		#availabilities can have more than one month due to diff rings
+		$date=$item.availabilities[0].month+"."+$item.availabilities[0].year
+		#$title=$item.title -replace "'s", "\\'s" #Should I escape any aposthrope?
+		$title=$item.title -replace "`r?`n", ""
+		$title=$item.title -replace '"', ' '
+		$id=$item.id
+		$renderItem=""
+		
+		if($counter -eq $countOfItems){
+		$renderItem="{ date: ""$date"", title:""$title"", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=$id'}"
+		}
+		else
+		{
+			$renderItem="{ date: ""$date"", title:""$title"", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=$id'} , "	
+		}
+		$timeline=$timeline+[Environment]::NewLine+$renderitem
+		
+		
+	}
+
+
+$template=Get-Content (Join-Path $dataFolderPath $roadmapTemplateFilename)
+$finalHTML=$template+$timeline+"    ]);</script>"
+
+#save file
+#$outFile=$product.product+".html"
+#Set-Content -Path $outFile -Value $finalHTML
+
+}
+# ================
+#endregion Processing
+# ================
