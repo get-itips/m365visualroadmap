@@ -14,7 +14,7 @@ layout: default
 |Microsoft Defender for Cloud Apps | Microsoft Defender for Office 365| Microsoft Edge|
 |Microsoft Entra | Microsoft Graph| Microsoft Information Protection|
 |Microsoft Intune | Microsoft Project| Microsoft Purview compliance portal|
-|Microsoft Search | Microsoft Stream| Microsoft Teams|
+|Microsoft Search | Microsoft Stream| [Microsoft Teams](./roadmap/Teams.html)|
 |Microsoft To Do | Microsoft Viva| Minecraft Education|
 |Office 365 | OneDrive| OneNote|
 |Outlook | Planner| PowerApps|
