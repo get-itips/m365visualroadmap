@@ -3,7 +3,7 @@ name: RoadmapChecker
 # Run every day at 2AM and 2PM
 on:
   schedule:
-  - cron: "0 2,14 * * *"
+  - cron: "0 12 * * *" #Runs at 12:00 UTC (6:00 AM CST)
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:

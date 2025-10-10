@@ -5,12 +5,19 @@
 layout: default
 ---
 
+## Welcome to M365 Visual Roadmap
+This project began as a personal initiative and was later made public for anyone interested in exploring the Microsoft 365 Roadmap in a visual format.
+
+## How to use
+Click on any product that you are interested on, it should load its roadmap items for the General Availability ring in a timeline format.
+Roadmap files are generated daily at 12:00 UTC.
+
 | Product | Product | Product |
 | :-------------: | :-------------: |:-------------: |
-|Access | Azure Information Protection| Bookings|
+|[Access](./roadmap/access.html) | [Azure Information Protection](./roadmap/azureip.html)| [Bookings](./roadmap/bookings.html)|
 |Excel | Exchange| Forms|
 |Microsoft 365 | Microsoft 365 admin center| Microsoft 365 app|
-|Microsoft 365 Defender | Microsoft Clipchamp| Microsoft Copilot (Microsoft 365)|
+|Microsoft 365 Defender | Microsoft Clipchamp| [Microsoft Copilot (Microsoft 365)](./roadmap/Copilot.html)|
 |Microsoft Defender for Cloud Apps | Microsoft Defender for Office 365| Microsoft Edge|
 |Microsoft Entra | Microsoft Graph| Microsoft Information Protection|
 |Microsoft Intune | Microsoft Project| Microsoft Purview compliance portal|
@@ -23,7 +30,11 @@ layout: default
 |Windows | Windows 365| Word|
 
 ## Disclaimer
-Roadmap files are generated daily.
+The content is provided **as-is**, without any warranties or guarantees. It may contain inaccuracies or omissions, and should not be considered official Microsoft guidance.  
+Use at your own discretion.
 
 ## Maintainer
 - [Andrés Gorzelany](https://www.linkedin.com/in/andresgorzelany/)
+
+## Acknowledgements
+This site wouldn't be possible without the great [d3-milestones](https://github.com/walterra/d3-milestones) by [walterra](https://github.com/walterra).
