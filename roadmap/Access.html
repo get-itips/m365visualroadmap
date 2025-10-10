@@ -1,0 +1,40 @@
+---
+layout: default
+title: M365 Visual Roadmap
+---
+
+<style>
+.wrapper a {
+    display: block;       /* Each link on a new line */
+    margin-bottom: 8px;   /* Space between links */
+    word-break: break-word;    /* breaks long words */
+	font-family: Segoe UI;
+	font-size: 13px;
+}
+</style>
+
+<link rel="stylesheet" href="https://unpkg.com/d3-milestones/build/d3-milestones.css">
+<script src="https://unpkg.com/d3-milestones/build/d3-milestones.min.js"></script>
+
+<div id="timeline"></div>
+
+<script>
+  milestones('#timeline')
+	.optimize('true')
+	.autoResize('false')
+	.urlTarget('_blank')
+	.distribution('top-bottom')
+    .mapping({
+      'timestamp': 'date',
+      'text': 'title',
+	  'url': 'url'
+    })
+    .parseTime('%B.%Y')
+    .aggregateBy('month')
+    .render([
+	
+	
+
+{ date: "October.2025", title:"Access: Add zoom slider magnification to Microsoft Access", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=489227'} , 
+{ date: "September.2025", title:"Access: Modernize Access Forms and Reports to work well on Large Format Monitors", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=478926'}
+    ]);</script>
