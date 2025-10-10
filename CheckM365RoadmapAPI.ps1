@@ -92,9 +92,9 @@ if($countOfItems -eq 1){ #if result = 1 it returns a PSCustomObject object inste
 $template=Get-Content (Join-Path $dataFolderPath $roadmapTemplateFilename)
 $finalHTML=$template+$timeline+"    ]);</script>"
 
-#save file
-#$outFile=$product.product+".html"
-#Set-Content -Path $outFile -Value $finalHTML
+# save file with UTF-8 encoding
+$outFile = $product.product + ".html"
+$finalHTML | Out-File -FilePath (Join-Path $roadmapFolderPath $outFile) -Encoding UTF8
 
 }
 # ================
