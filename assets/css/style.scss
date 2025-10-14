@@ -4,7 +4,7 @@
 @import "{{ site.theme }}";
 
 .page-header {
-    background-color: #000000;
+    background-image: linear-gradient(120deg, #000000, #000000);
     text-align: left;
     padding: 1rem 2rem;
 }
@@ -19,6 +19,10 @@
   h6 {
     color: #000000;
   }
+}
+
+.main-content :first-child {
+    margin-top: unset;
 }
 
 
