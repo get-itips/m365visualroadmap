@@ -10,11 +10,11 @@ This project began as a personal initiative and was later made public for anyone
 
 ## How to use
 Click on any product that you are interested on, it should load its roadmap items for the General Availability ring in a timeline format.
-Roadmap files are generated daily at 12:00 UTC.
+Roadmap files are generated daily at 12:00 UTC. If you find any issues please open an issue in the GitHub repository.
 
 | Product | Product | Product |
 | :-------------: | :-------------: |:-------------: |
-|[Access](./roadmap/access.html) | [Azure Information Protection](./roadmap/azureip.html)| [Bookings](./roadmap/bookings.html)|
+|[Access](./roadmap/Access.html) | [Azure Information Protection](./roadmap/Azureip.html)| [Bookings](./roadmap/Bookings.html)|
 |Excel | Exchange| Forms|
 |Microsoft 365 | Microsoft 365 admin center| Microsoft 365 app|
 |Microsoft 365 Defender | Microsoft Clipchamp| [Microsoft Copilot (Microsoft 365)](./roadmap/Copilot.html)|
