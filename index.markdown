@@ -5,7 +5,7 @@
 layout: default
 ---
 
-## Welcome to M365 Visual Roadmap
+## M365 Visual Roadmap
 This project began as a personal initiative and was later made public for anyone interested in exploring the Microsoft 365 Roadmap in a visual format.
 
 ## How to use
