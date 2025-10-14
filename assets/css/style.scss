@@ -4,7 +4,9 @@
 @import "{{ site.theme }}";
 
 .page-header {
-    background-image: linear-gradient(120deg, #6CB4EE, #082567);
+    background-color: #000000;
+    text-align: left;
+    padding: 1rem 2rem;
 }
 .main-content {
     max-width: 120rem;
@@ -15,7 +17,7 @@
   h4,
   h5,
   h6 {
-    color: #AA0000;
+    color: #000000;
   }
 }
 
