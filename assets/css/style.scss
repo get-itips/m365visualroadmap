@@ -25,6 +25,16 @@
     margin-top: unset;
 }
 
+.header-link a {
+  color: #FFFFFF;
+  text-decoration: none; /* Removes underline by default */
+}
+
+.header-link a:hover {
+  text-decoration: none; /* Ensures no underline on hover */
+}
+
+
 
 @media screen and (max-width: 42em)  {
 /* Credits https://codepen.io/paulobrien/pen/KxhFk */
