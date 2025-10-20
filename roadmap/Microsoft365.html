@@ -1,0 +1,90 @@
+---
+layout: default
+title: ◉ M365 Visual Roadmap
+---
+
+<style>
+.wrapper a {
+    display: block;       /* Each link on a new line */
+    margin-bottom: 8px;   /* Space between links */
+    word-break: break-word;    /* breaks long words */
+	font-family: Segoe UI;
+	font-size: 13px;
+}
+
+	
+</style>
+
+<link rel="stylesheet" href="https://unpkg.com/d3-milestones/build/d3-milestones.css">
+<script src="https://unpkg.com/d3-milestones/build/d3-milestones.min.js"></script>
+
+<div id="timeline"></div>
+
+<script>
+  milestones('#timeline')
+	.optimize('true')
+	.autoResize('false')
+	.urlTarget('_blank')
+	.distribution('top-bottom')
+    .mapping({
+      'timestamp': 'date',
+      'text': 'title',
+	  'url': 'url'
+    })
+    .parseTime('%B.%Y')
+    .aggregateBy('month')
+    .render([
+	
+	
+
+{ date: "August.2026", title:"Microsoft 365: Long-term retention period for M365 Backup", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=481834'} , 
+{ date: "April.2026", title:"Microsoft 365: The Next Generation of File & Folder Sharing", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=492622'} , 
+{ date: "March.2026", title:"Microsoft 365: Information Barriers (IB) upgrading from IB v1 to IB v2 with new capabilities", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=115482'} , 
+{ date: "February.2026", title:"Microsoft 365: Perform granular file-level restore using Microsoft 365 Backup", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=464991'} , 
+{ date: "February.2026", title:"Microsoft 365: PAYGO consumption-based meter for your extra SharePoint storage needs", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=506743'} , 
+{ date: "January.2026", title:"Microsoft Copilot (Microsoft 365): Delegate Scheduling via Copilot chat", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=511817'} , 
+{ date: "January.2026", title:"Microsoft Copilot (Microsoft 365): Delegate Meeting Search via Copilot chat", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=511818'} , 
+{ date: "January.2026", title:"Microsoft Copilot (Microsoft 365): Delegate Meeting Triage via Copilot chat", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=511819'} , 
+{ date: "December.2025", title:"Microsoft 365: Multi-Geo In-Region Routing", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=410245'} , 
+{ date: "December.2025", title:"Microsoft 365: Microsoft 365 Backup capabilities available in GCC", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=494517'} , 
+{ date: "December.2025", title:"Microsoft 365: Backup Activity Logs", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=500019'} , 
+{ date: "November.2025", title:"Microsoft Copilot (Microsoft 365): People connectors for Microsoft 365 Copilot", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=480736'} , 
+{ date: "November.2025", title:"Microsoft 365 app: Microsoft Places Support to GCCH and DoD", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497998'} , 
+{ date: "November.2025", title:"Microsoft 365: SMTP onboarding to App Role Based Access Control", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=498356'} , 
+{ date: "November.2025", title:"Microsoft 365 app: Overview Page in Copilot Notebooks", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=512430'} , 
+{ date: "November.2025", title:"Microsoft 365: Cloud Update - Rollback All Devices", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=515152'} , 
+{ date: "October.2025", title:"Microsoft 365: AI workflows in Teams Workflows app & SharePoint document libraries", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=499420'} , 
+{ date: "October.2025", title:"Microsoft Copilot (Microsoft 365): Image effects in Microsoft 365 Copilot", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=502844'} , 
+{ date: "October.2025", title:"Microsoft 365 admin center: Agent metadata in inventory export", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=502878'} , 
+{ date: "October.2025", title:"Microsoft Copilot (Microsoft 365): Overview in Copilot Notebooks", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=503757'} , 
+{ date: "October.2025", title:"Microsoft 365: Department Billing for Microsoft 365 Backup", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=506744'} , 
+{ date: "September.2025", title:"Microsoft Copilot (Microsoft 365): Agents in Copilot Chat available on Edge Sidebar", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=482410'} , 
+{ date: "September.2025", title:"Microsoft Copilot (Microsoft 365): Preview and chat with Microsoft Word, Excel, and PowerPoint files in the Microsoft 365 Copilot app on iPhone", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=500159'} , 
+{ date: "September.2025", title:"Microsoft 365: eSignature Smart Tagging for Electronically Signed Documents", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=500873'} , 
+{ date: "August.2025", title:"Microsoft 365: Multi-admin change notifications for Microsoft 365 Backup", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=464993'} , 
+{ date: "August.2025", title:"Microsoft 365: Protection unit-level offboarding for Microsoft 365 Backup", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=464994'} , 
+{ date: "August.2025", title:"Microsoft 365: Microsoft 365 companion apps- a suite of apps designed to enhance productivity ", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=486856'} , 
+{ date: "August.2025", title:"Microsoft 365: Microsoft Places - Enhanced desk booking capabilities", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=488803'} , 
+{ date: "August.2025", title:"Microsoft Purview compliance portal: Data Loss Prevention - Detection of True file type in EXO DLP", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=493291'} , 
+{ date: "August.2025", title:"Microsoft 365: New Trust Center settings to block file opens using insecure protocols", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497299'} , 
+{ date: "July.2025", title:"Microsoft 365: M365 Archive Search", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=494999'} , 
+{ date: "June.2025", title:"Microsoft 365: Create full-workload backup policies for Microsoft 365 Backup", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=464990'} , 
+{ date: "June.2025", title:"Microsoft Copilot (Microsoft 365): Dictate your prompts in Copilot Chat", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=475968'} , 
+{ date: "June.2025", title:"Microsoft Copilot (Microsoft 365): People Skills is now available ", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=485726'} , 
+{ date: "May.2025", title:"Microsoft Copilot (Microsoft 365): Read aloud available in Microsoft 365 Copilot Chat", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=475967'} , 
+{ date: "May.2025", title:"Microsoft 365: Copilot Prompt Gallery - Share a prompt to a Microsoft Teams team", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=485183'} , 
+{ date: "May.2025", title:"Microsoft 365: Use Copilot in your search tab in the Microsoft 365 Copilot mobile app", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=485731'} , 
+{ date: "April.2025", title:"Microsoft 365: Create Dynamic rule-based backup policies for Microsoft 365 Backup", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=464989'} , 
+{ date: "March.2025", title:"Microsoft 365: Dedicated Backup Administrator Role for Microsoft 365 Backup", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=464992'} , 
+{ date: "March.2025", title:"Microsoft Copilot (Microsoft 365):  Microsoft Copilot Chat and Microsoft 365 Copilot - Users can insert cloud files in Copilot chat prompts. ", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=481139'} , 
+{ date: "March.2025", title:"Outlook: Schedule from email with Copilot", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=483007'} , 
+{ date: "February.2025", title:"Microsoft 365 admin center: Google Groups to M365 Modern Groups Migration Service", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=470024'} , 
+{ date: "February.2025", title:"Microsoft 365: Updated settings for the Microsoft 365 app on Windows", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=471004'} , 
+{ date: "January.2025", title:"Microsoft 365 admin center: Google to Entra Identity Sync service", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=470023'} , 
+{ date: "January.2025", title:"Microsoft 365: Updates to the Microsoft 365 app", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=471003'} , 
+{ date: "January.2025", title:"Microsoft Copilot (Microsoft 365): Updated welcome screen for the Microsoft 365 app on Windows", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=471447'} , 
+{ date: "December.2024", title:"Microsoft Copilot (Microsoft 365): Copilot Prompt Gallery - Share a prompt with a co-worker", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=400710'} , 
+{ date: "October.2024", title:"Microsoft 365 app: Microsoft Loop - Loop workspace sensitivity labels", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=111225'} , 
+{ date: "August.2024", title:"Outlook: Pinned ability to always see who is in the office based on Work Hours and Location", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=410986'} , 
+{ date: "February.2024", title:"Microsoft 365:  Help me create  in Microsoft 365", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=383010'}
+    ]);</script>
