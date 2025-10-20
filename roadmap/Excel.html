@@ -1,0 +1,83 @@
+---
+layout: default
+title: ◉ M365 Visual Roadmap
+---
+
+<style>
+.wrapper a {
+    display: block;       /* Each link on a new line */
+    margin-bottom: 8px;   /* Space between links */
+    word-break: break-word;    /* breaks long words */
+	font-family: Segoe UI;
+	font-size: 13px;
+}
+
+	
+</style>
+
+<link rel="stylesheet" href="https://unpkg.com/d3-milestones/build/d3-milestones.css">
+<script src="https://unpkg.com/d3-milestones/build/d3-milestones.min.js"></script>
+
+<div id="timeline"></div>
+
+<script>
+  milestones('#timeline')
+	.optimize('true')
+	.autoResize('false')
+	.urlTarget('_blank')
+	.distribution('top-bottom')
+    .mapping({
+      'timestamp': 'date',
+      'text': 'title',
+	  'url': 'url'
+    })
+    .parseTime('%B.%Y')
+    .aggregateBy('month')
+    .render([
+	
+	
+
+{ date: "April.2026", title:"Microsoft 365: The Next Generation of File & Folder Sharing", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=492622'} , 
+{ date: "January.2026", title:"Microsoft Purview compliance portal: Apply sensitivity labels with user-defined permissions in Office for the web in Microsoft 365", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=468888'} , 
+{ date: "December.2025", title:"Microsoft Copilot (Microsoft 365): Copilot Prompt Gallery - Company-wide prompt publishing", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=486695'} , 
+{ date: "November.2025", title:"Microsoft Excel: Extending support for Insights Services to GCC-H and DoD sovereign clouds", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=488142'} , 
+{ date: "November.2025", title:"Microsoft Copilot (Microsoft 365): Generate a formula with Copilot from the grid upon  = ", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=496362'} , 
+{ date: "November.2025", title:"Excel: =COPILOT Function", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=499660'} , 
+{ date: "October.2025", title:"Microsoft Copilot (Microsoft 365): See a summary from Copilot of the latest changes and comments in the Word, Excel, and PowerPoint backstage view.", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=489826'} , 
+{ date: "October.2025", title:"Microsoft Copilot (Microsoft 365): Surveys Agent helps you build, run, and analyze surveys", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=498219'} , 
+{ date: "September.2025", title:"Excel: Python in Excel for the web (GCC)", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=485764'} , 
+{ date: "September.2025", title:"Excel: Formula completion with Copilot in Excel", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=496370'} , 
+{ date: "August.2025", title:"Microsoft Copilot (Microsoft 365): Improved Python-powered answers in Copilot in Excel", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=490212'} , 
+{ date: "August.2025", title:"Microsoft 365: New Trust Center settings to block file opens using insecure protocols", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497299'} , 
+{ date: "July.2025", title:"Microsoft Copilot (Microsoft 365): Access Copilot Chat in your Microsoft 365 apps", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=494830'} , 
+{ date: "May.2025", title:"Excel: Refresh queries from Authenticated Data Sources in Excel for the Web", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=65632'} , 
+{ date: "May.2025", title:"Excel: Enable  View Side by Side  on Mac", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=367423'} , 
+{ date: "May.2025", title:"Microsoft Copilot (Microsoft 365): Copilot advanced text analysis in Excel", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=485188'} , 
+{ date: "May.2025", title:"Excel: Expanded eligibility for Python in Excel", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=487129'} , 
+{ date: "May.2025", title:"Microsoft Purview Compliance Portal: Dynamic watermarking for files protected with sensitivity labels", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=490121'} , 
+{ date: "April.2025", title:"Excel: Python in Excel for GCC", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=475046'} , 
+{ date: "March.2025", title:"Microsoft Copilot (Microsoft 365): Copilot in Excel - Graph Grounded Chat", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=375510'} , 
+{ date: "March.2025", title:"Microsoft Copilot (Microsoft 365): Use Copilot to search for answers from the web", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=406555'} , 
+{ date: "March.2025", title:"Microsoft Copilot (Microsoft 365): Create with Copilot in Excel generates templates and tables", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=429873'} , 
+{ date: "March.2025", title:"Microsoft Copilot (Microsoft 365): Copilot in Excel with Python for Web", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=473459'} , 
+{ date: "February.2025", title:"Excel: Python in Excel for the web", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=471001'} , 
+{ date: "February.2025", title:"Microsoft Copilot (Microsoft 365): Copilot in Excel with Python Language Expansion for Windows", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=473458'} , 
+{ date: "January.2025", title:"Microsoft Copilot (Microsoft 365): Copilot Prompt Gallery - Share a prompt to a Microsoft Teams team ", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=391636'} , 
+{ date: "January.2025", title:"Microsoft Purview compliance portal: Dynamic watermarking for files protected with sensitivity labels ", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=400717'} , 
+{ date: "January.2025", title:"Excel: Post-migration Excel remediation", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=470436'} , 
+{ date: "January.2025", title:"Microsoft Information Protection: Protect your most sensitive content with double key encryption", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=472025'} , 
+{ date: "November.2024", title:"Microsoft Copilot (Microsoft 365): Copilot in Excel with Python", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=396728'} , 
+{ date: "November.2024", title:"Excel: Forms data sync support in Excel desktop", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=466743'} , 
+{ date: "October.2024", title:"Microsoft Forms: New data sync solution to Excel for the web in Microsoft OneDrive and SharePoint Online", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=418378'} , 
+{ date: "September.2024", title:"Microsoft Purview compliance portal: Information Protection - Modernized user-defined permissions experience", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=189826'} , 
+{ date: "September.2024", title:"Microsoft Forms: New data sync solution replaces old data sync solution for syncing forms responses to Excel", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=410988'} , 
+{ date: "August.2024", title:"Microsoft 365 app: Use sensitivity labels in Microsoft 365 apps when connected experiences are disabled", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=374290'} , 
+{ date: "August.2024", title:"Microsoft Copilot (Microsoft 365): Copilot in Excel support for formula data summaries in rows and cells", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=398989'} , 
+{ date: "August.2024", title:"Microsoft Copilot (Microsoft 365): Copilot in Excel - Custom chart and PivotTable creation", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=399423'} , 
+{ date: "August.2024", title:"Microsoft Copilot (Microsoft 365): Copilot in Excel - Summarize text columns", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=399425'} , 
+{ date: "July.2024", title:"Microsoft Purview compliance portal: Information Protection for Word, Excel, and PowerPoint - Improved DLP policy tip reliability", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=383018'} , 
+{ date: "July.2024", title:"Microsoft Copilot (Microsoft 365): Excel – Formula Conditional Formatting", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=392454'} , 
+{ date: "April.2024", title:"Microsoft Purview compliance portal: Microsoft Purview Information Protection Tracking and Revocation - End-User Tracking and Revocation", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=164210'} , 
+{ date: "April.2024", title:"Excel: Comment filtering", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=366127'} , 
+{ date: "January.2024", title:"Microsoft 365 app: Catch Up Improvements on Web", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=184359'}
+    ]);</script>
