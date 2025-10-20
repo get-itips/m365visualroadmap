@@ -4,3 +4,16 @@ Teams,https://www.microsoft.com/releasecommunications/api/v2/m365?includeFacets=
 Copilot,https://www.microsoft.com/releasecommunications/api/v2/m365?includeFacets=true&skip=0&filter=products/any(f:f%20eq%20%27Microsoft%20Copilot%20(Microsoft%20365)%27)&orderby=generalAvailabilityDate%20desc
 Access,https://www.microsoft.com/releasecommunications/api/v2/m365?includeFacets=true&skip=0&filter=products/any(f:f%20eq%20%27Access%27)&orderby=generalAvailabilityDate%20desc
 AzureIP,https://www.microsoft.com/releasecommunications/api/v2/m365?includeFacets=true&skip=0&filter=products/any(f:f%20eq%20%27Azure%20Information%20Protection%27)&orderby=generalAvailabilityDate%20desc
+Excel,https://www.microsoft.com/releasecommunications/api/v2/m365?includeFacets=true&skip=0&filter=products/any(f:f%20eq%20%27Excel%27)&orderby=generalAvailabilityDate%20desc
+Microsoft365,https://www.microsoft.com/releasecommunications/api/v2/m365?includeFacets=true&skip=0&filter=products/any(f:f%20eq%20%27Microsoft%20365%27)&orderby=generalAvailabilityDate%20desc
+Microsoft365Defender,https://www.microsoft.com/releasecommunications/api/v2/m365?includeFacets=true&skip=0&filter=products/any(f:f%20eq%20%27Microsoft%20365%20Defender%27)&orderby=generalAvailabilityDate%20desc
+DefenderForCloudApps,https://www.microsoft.com/releasecommunications/api/v2/m365?includeFacets=true&skip=0&filter=products/any(f:f%20eq%20%27Microsoft%20Defender%20for%20Cloud%20Apps%27)&orderby=generalAvailabilityDate%20desc
+Entra,https://www.microsoft.com/releasecommunications/api/v2/m365?includeFacets=true&skip=0&filter=products/any(f:f%20eq%20%27Microsoft%20Entra%27)&orderby=generalAvailabilityDate%20desc
+Intune,https://www.microsoft.com/releasecommunications/api/v2/m365?includeFacets=true&skip=0&filter=products/any(f:f%20eq%20%27Microsoft%20Intune%27)&orderby=generalAvailabilityDate%20desc
+Search,https://www.microsoft.com/releasecommunications/api/v2/m365?includeFacets=true&skip=0&filter=products/any(f:f%20eq%20%27Microsoft%20Search%27)&orderby=generalAvailabilityDate%20desc
+ToDo,https://www.microsoft.com/releasecommunications/api/v2/m365?includeFacets=true&skip=0&filter=products/any(f:f%20eq%20%27Microsoft%20To%20Do%27)&orderby=generalAvailabilityDate%20desc
+Office365,https://www.microsoft.com/releasecommunications/api/v2/m365?includeFacets=true&skip=0&filter=products/any(f:f%20eq%20%27Office%20365%27)&orderby=generalAvailabilityDate%20desc
+Outlook,https://www.microsoft.com/releasecommunications/api/v2/m365?includeFacets=true&skip=0&filter=products/any(f:f%20eq%20%27Outlook%27)&orderby=generalAvailabilityDate%20desc
+PowerPoint,https://www.microsoft.com/releasecommunications/api/v2/m365?includeFacets=true&skip=0&filter=products/any(f:f%20eq%20%27PowerPoint%27)&orderby=generalAvailabilityDate%20desc
+UniversalPrint,https://www.microsoft.com/releasecommunications/api/v2/m365?includeFacets=true&skip=0&filter=products/any(f:f%20eq%20%27Universal%20Print%27)&orderby=generalAvailabilityDate%20desc
+Windows,https://www.microsoft.com/releasecommunications/api/v2/m365?includeFacets=true&skip=0&filter=products/any(f:f%20eq%20%27Windows%27)&orderby=generalAvailabilityDate%20desc
