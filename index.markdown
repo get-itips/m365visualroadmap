@@ -17,17 +17,17 @@ Roadmap files are generated daily at 12:00 UTC. If you find any issues please op
 |[Access](./roadmap/Access.html) | [Azure Information Protection](./roadmap/Azureip.html)| [Bookings](./roadmap/Bookings.html)|
 |[Excel](./roadmap/Excel.html) | Exchange| Forms|
 |[Microsoft 365](./roadmap/Microsoft365.html) | Microsoft 365 admin center| Microsoft 365 app|
-|Microsoft 365 Defender | Microsoft Clipchamp| [Microsoft Copilot (Microsoft 365)](./roadmap/Copilot.html)|
-|Microsoft Defender for Cloud Apps | Microsoft Defender for Office 365| Microsoft Edge|
-|Microsoft Entra | Microsoft Graph| Microsoft Information Protection|
-|Microsoft Intune | Microsoft Project| Microsoft Purview compliance portal|
-|Microsoft Search | Microsoft Stream| [Microsoft Teams](./roadmap/Teams.html)|
-|Microsoft To Do | Microsoft Viva| Minecraft Education|
-|Office 365 | OneDrive| OneNote|
-|Outlook | Planner| PowerApps|
-|PowerPoint | SharePoint| SharePoint Syntex|
-|Universal Print | Visio| Whiteboard|
-|Windows | Windows 365| Word|
+|[Microsoft 365 Defender](./roadmap/Microsoft365Defender.html) | Microsoft Clipchamp| [Microsoft Copilot (Microsoft 365)](./roadmap/Copilot.html)|
+|[Microsoft Defender for Cloud Apps](./roadmap/DefenderForCloudApps.html) | Microsoft Defender for Office 365| Microsoft Edge|
+|[Microsoft Entra](./roadmap/Entra.html) | Microsoft Graph| Microsoft Information Protection|
+|[Microsoft Intune](./roadmap/Intune.html) | Microsoft Project| Microsoft Purview compliance portal|
+|[Microsoft Search](./roadmap/Search.html) | Microsoft Stream| [Microsoft Teams](./roadmap/Teams.html)|
+|[Microsoft To Do](./roadmap/ToDo.html) | Microsoft Viva| Minecraft Education|
+|[Office 365](./roadmap/Office365.html) | OneDrive| OneNote|
+|[Outlook](./roadmap/Outlook.html) | Planner| PowerApps|
+|[PowerPoint](./roadmap/PowerPoint.html) | SharePoint| SharePoint Syntex|
+|[Universal Print](./roadmap/UniversalPrint.html) | Visio| Whiteboard|
+|[Windows](./roadmap/Windows.html) | Windows 365| Word|
 
 ## Disclaimer
 The content is provided **as-is**, without any warranties or guarantees. It may contain inaccuracies or omissions, and should not be considered official Microsoft guidance.  
