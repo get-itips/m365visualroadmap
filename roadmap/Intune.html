@@ -1,0 +1,77 @@
+---
+layout: default
+title: ◉ M365 Visual Roadmap
+---
+
+<style>
+.wrapper a {
+    display: block;       /* Each link on a new line */
+    margin-bottom: 8px;   /* Space between links */
+    word-break: break-word;    /* breaks long words */
+	font-family: Segoe UI;
+	font-size: 13px;
+}
+
+	
+</style>
+
+<link rel="stylesheet" href="https://unpkg.com/d3-milestones/build/d3-milestones.css">
+<script src="https://unpkg.com/d3-milestones/build/d3-milestones.min.js"></script>
+
+<div id="timeline"></div>
+
+<script>
+  milestones('#timeline')
+	.optimize('true')
+	.autoResize('false')
+	.urlTarget('_blank')
+	.distribution('top-bottom')
+    .mapping({
+      'timestamp': 'date',
+      'text': 'title',
+	  'url': 'url'
+    })
+    .parseTime('%B.%Y')
+    .aggregateBy('month')
+    .render([
+	
+	
+
+{ date: "June.2026", title:"Microsoft Intune: Intune Suite - Improved elevation detection", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=399933'} , 
+{ date: "March.2026", title:"Microsoft Intune: iOS app multiple managed accounts", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=109560'} , 
+{ date: "March.2026", title:"Microsoft Intune: Windows enrollment attestation ", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=378649'} , 
+{ date: "March.2026", title:"Microsoft Intune: Managed device attestation for iOS/iPadOS and macOS device enrollment and ADE", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=389857'} , 
+{ date: "February.2026", title:"Microsoft Intune: Intune Suite - Automated device enrollment without user affinity for visionOS and tvOS", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=468887'} , 
+{ date: "February.2026", title:"Microsoft Intune: Windows Quality Update management policies", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=501449'} , 
+{ date: "February.2026", title:"Microsoft Intune: Windows Quality Update management policies", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=501450'} , 
+{ date: "January.2026", title:"Microsoft Intune: Intune Suite - Endpoint Privilege Management on single session Azure Virtual Desktop", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=399928'} , 
+{ date: "January.2026", title:"Microsoft Intune: Enrollment time grouping for iOS/iPadOS automated device enrollment ", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=406907'} , 
+{ date: "January.2026", title:"Microsoft Intune: New enrollment policies experience for iOS/iPadOS ADE", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=469032'} , 
+{ date: "January.2026", title:"Microsoft Intune: Intune Suite - Unattended Remote Help for Windows - Remote Sign-in", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=499154'} , 
+{ date: "December.2025", title:"Microsoft Intune: On demand remediations - single device", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=124890'} , 
+{ date: "November.2025", title:"Microsoft Intune: Additional granular RBAC controls to manage Antivirus, Firewall, BitLocker, and Endpoint Detection and Response endpoint security workloads", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=498899'} , 
+{ date: "November.2025", title:"Microsoft Intune: Intune Suite - Support approvals can now be requested by non-primary users of a device.", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=499156'} , 
+{ date: "November.2025", title:"Microsoft Intune: Intune settings available in Catalog and Account Protection template for Adminless feature", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=501456'} , 
+{ date: "November.2025", title:"Microsoft Intune: Recovery Lock management for macOS", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=501457'} , 
+{ date: "November.2025", title:"Microsoft Intune: Autopilot device preparation for Windows 365 Frontline shared general availability ", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=501559'} , 
+{ date: "October.2025", title:"Microsoft Intune: Intune Suite - Microsoft Tunnel - Gateway Scaling", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=178921'} , 
+{ date: "October.2025", title:"Microsoft Intune: Intune Suite - Websocket Support for Tunnel MAM (iOS)", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=491026'} , 
+{ date: "October.2025", title:"Microsoft Intune: Intune Suite - Operational dashboard to gain insight on EPM status and elevations.", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=491027'} , 
+{ date: "October.2025", title:"Microsoft Intune: Intune Suite - Endpoint Privilege Management Virtual Account Support", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=499155'} , 
+{ date: "October.2025", title:"Microsoft Intune: Windows Backup for organizations in Intune", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=501437'} , 
+{ date: "September.2025", title:"Microsoft Intune: Customization of app installs with Enterprise Application Management", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=491028'} , 
+{ date: "August.2025", title:"Microsoft Intune: macOS Platform SSO Support", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=383952'} , 
+{ date: "August.2025", title:"Microsoft Intune: Enhanced Device Inventory for Windows Devices for Government Cloud (GCCH)", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=408170'} , 
+{ date: "August.2025", title:"Microsoft Intune: Application Control for Business", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=498896'} , 
+{ date: "July.2025", title:"Microsoft Intune: Device clean up rule", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=397886'} , 
+{ date: "July.2025", title:"Microsoft 365 Admin Center: Setting to pin M365 Copilot app to Windows taskbar", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=498221'} , 
+{ date: "May.2025", title:"Microsoft Intune: Enhanced device inventory for Apple and Android devices", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=473451'} , 
+{ date: "April.2025", title:"Microsoft Intune: Endpoint Privilege Management rules support specifying allowable command arguments", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=399934'} , 
+{ date: "April.2025", title:"Microsoft Intune: Enrollment time grouping for Android Enterprise Corporate devices", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=408535'} , 
+{ date: "March.2025", title:"Microsoft Intune: Resource performance report for Windows physical PCs for GCCH", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=469034'} , 
+{ date: "March.2025", title:"Microsoft Intune: Intune Suite – Remote Help supports multi-session AVD", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=473457'} , 
+{ date: "March.2025", title:"Microsoft Intune: Support for Microsoft Defender for Endpoint (MDE) attach for synthetic devices for GCC and GCCH environments", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=476495'} , 
+{ date: "January.2025", title:"Microsoft Intune: Intune Suite - Security Baselines for HoloLens 2", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=406909'} , 
+{ date: "November.2024", title:"Microsoft Intune: Enhanced device inventory for Windows devices", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=408169'} , 
+{ date: "September.2024", title:"Microsoft Intune: Guided upgrade of applications ", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=397750'}
+    ]);</script>
