@@ -1,0 +1,49 @@
+---
+layout: default
+title: ◉ M365 Visual Roadmap
+---
+
+<style>
+.wrapper a {
+    display: block;       /* Each link on a new line */
+    margin-bottom: 8px;   /* Space between links */
+    word-break: break-word;    /* breaks long words */
+	font-family: Segoe UI;
+	font-size: 13px;
+}
+
+	
+</style>
+
+<link rel="stylesheet" href="https://unpkg.com/d3-milestones/build/d3-milestones.css">
+<script src="https://unpkg.com/d3-milestones/build/d3-milestones.min.js"></script>
+
+<div id="timeline"></div>
+
+<script>
+  milestones('#timeline')
+	.optimize('true')
+	.autoResize('false')
+	.urlTarget('_blank')
+	.distribution('top-bottom')
+    .mapping({
+      'timestamp': 'date',
+      'text': 'title',
+	  'url': 'url'
+    })
+    .parseTime('%B.%Y')
+    .aggregateBy('month')
+    .render([
+	
+	
+
+{ date: "July.2025", title:"Windows 365: Frontline in Shared mode availability for Germany West Central, Korea Central, Korea South", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=495262'} , 
+{ date: "June.2025", title:"Windows 365: Concurrency assignment for Windows 365 Frontline in dedicated mode", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=473454'} , 
+{ date: "June.2025", title:"Windows 365: Available from New Zealand North", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=481149'} , 
+{ date: "May.2025", title:"Windows 365: Resize is enabled for Windows 365 Frontline Cloud PCs", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=475246'} , 
+{ date: "April.2025", title:"Windows 365: Users can authenticate to Windows 365 using passkeys (FIDO2) on Android", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=481153'} , 
+{ date: "March.2025", title:"Windows 365: Available from Mexico Central, Spain Central", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=481148'} , 
+{ date: "March.2025", title:"Windows 365: Windows app on Android GA, including MAM support", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=481150'} , 
+{ date: "March.2025", title:" Windows 365: Local desktop access for Windows 365 Boot user", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=481152'} , 
+{ date: "December.2024", title:"Microsoft Copilot (Microsoft 365): Copilot Prompt Gallery - Share a prompt with a co-worker", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=400710'}
+    ]);</script>

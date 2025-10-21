@@ -1,0 +1,82 @@
+---
+layout: default
+title: ◉ M365 Visual Roadmap
+---
+
+<style>
+.wrapper a {
+    display: block;       /* Each link on a new line */
+    margin-bottom: 8px;   /* Space between links */
+    word-break: break-word;    /* breaks long words */
+	font-family: Segoe UI;
+	font-size: 13px;
+}
+
+	
+</style>
+
+<link rel="stylesheet" href="https://unpkg.com/d3-milestones/build/d3-milestones.css">
+<script src="https://unpkg.com/d3-milestones/build/d3-milestones.min.js"></script>
+
+<div id="timeline"></div>
+
+<script>
+  milestones('#timeline')
+	.optimize('true')
+	.autoResize('false')
+	.urlTarget('_blank')
+	.distribution('top-bottom')
+    .mapping({
+      'timestamp': 'date',
+      'text': 'title',
+	  'url': 'url'
+    })
+    .parseTime('%B.%Y')
+    .aggregateBy('month')
+    .render([
+	
+	
+
+{ date: "May.2026", title:"Microsoft Edge: PDF Viewer Performance Improvement and Minor Visual Updates", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=516043'} , 
+{ date: "January.2026", title:"Microsoft Edge: Adding support for viewing Sensitivity labels applied to a Microsoft Information Protection (MIP) Protected PDF ", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=489232'} , 
+{ date: "January.2026", title:"Microsoft Edge: Ask Copilot from the address bar", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=493287'} , 
+{ date: "December.2025", title:"Microsoft Edge: Add “Summarize” and “Explain” Copilot actions in PDF reader", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=498641'} , 
+{ date: "December.2025", title:"Microsoft Edge: Adding protection against malicious sideloaded extensions", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=503593'} , 
+{ date: "November.2025", title:"Microsoft Purview compliance portal:  New Inline Protection controls for AI apps in Edge for Business  ", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=486368'} , 
+{ date: "November.2025", title:"Microsoft Edge: Microsoft 365 Copilot Chat access to page content will soon extend to work across multiple open tabs", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=496364'} , 
+{ date: "October.2025", title:"Microsoft Edge: AI theme generator", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=396289'} , 
+{ date: "October.2025", title:"Microsoft Edge: Built-in PDF reader powered by Adobe engine  ", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=489231'} , 
+{ date: "October.2025", title:"Microsoft Edge: Microsoft Edge for Business will soon integrate an entry point into Microsoft 365 Copilot Chat from the address bar", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=489822'} , 
+{ date: "October.2025", title:"Microsoft Edge: A Refreshed Profile Flyout Experience for Better Clarity and Actionability", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=495833'} , 
+{ date: "October.2025", title:" Microsoft Edge: Summarization, Translation, and Citation will soon be supported by Microsoft Copilot and Microsoft 365 Copilot Chat in our menus", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497135'} , 
+{ date: "October.2025", title:"Microsoft Edge: v.140 - Improved Navigation to Extension Surfaces", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497141'} , 
+{ date: "October.2025", title:"Microsoft Edge: Ground Microsoft 365 Copilot Chat in Edge for Business in your open OneDrive and SharePoint documents", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=499423'} , 
+{ date: "October.2025", title:"Microsoft Edge: Ground Microsoft 365 Copilot Chat in Edge for Business in your open YouTube videos", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=499424'} , 
+{ date: "October.2025", title:"Microsoft Edge: v.141 - Real-time video translation", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=503301'} , 
+{ date: "October.2025", title:"Microsoft Edge: Desktop Visual Search", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=508519'} , 
+{ date: "October.2025", title:"Microsoft Edge: Tab Search", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=508520'} , 
+{ date: "September.2025", title:"Microsoft Edge: Rewrite by Copilot in Edge is being upgraded to include enterprise data protection compliance standards", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=420335'} , 
+{ date: "September.2025", title:"Microsoft Edge: v. 140 - Tab Groups – Auto-Save and Easy Revisit", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=499430'} , 
+{ date: "September.2025", title:"Microsoft Edge: v.140 - HTTPS First Mode", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=500162'} , 
+{ date: "August.2025", title:"Microsoft Edge: v.140 - Auto-discarding Sleeping Tabs", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=392848'} , 
+{ date: "August.2025", title:"Microsoft Edge: v.139 - Edge Settings Improvements", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=419809'} , 
+{ date: "August.2025", title:"Microsoft Purview compliance portal: Data Loss Prevention - New inline data protection in Edge for Business for unmanaged Windows and macOS devices", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=486366'} , 
+{ date: "August.2025", title:"Microsoft Edge: Microsoft 365 Copilot Chat Summarization in Edge for Business Context Menu", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=491473'} , 
+{ date: "August.2025", title:"Microsoft Edge: Use Primary work profile as default profile to open external links", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=494835'} , 
+{ date: "August.2025", title:"Microsoft Edge: v.139 - New Autofill Personal Information Settings Configuration", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=494844'} , 
+{ date: "August.2025", title:"Microsoft Edge: AI-powered History search", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=495834'} , 
+{ date: "August.2025", title:"Microsoft Edge: Introducing a new policy that can enable/disable Microsoft 365 Copilot Chat in Edge for Business from showing in the toolbar", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=496140'} , 
+{ date: "August.2025", title:"Microsoft Edge: Open external links in another profile when recommended by external applications", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497138'} , 
+{ date: "July.2025", title:"Microsoft Edge: Find on Page in Microsoft Edge for Business will soon be integrated with Microsoft 365 Copilot Chat ", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=489222'} , 
+{ date: "July.2025", title:"Microsoft Edge: v.138 - Policies to manage Shadow IT", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=494516'} , 
+{ date: "June.2025", title:"Microsoft Edge: Secure password deployment in the Edge management service", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=483490'} , 
+{ date: "June.2025", title:"Microsoft Edge: Monitoring in the Edge management service", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=487443'} , 
+{ date: "May.2025", title:"Microsoft Edge: v.136 - Elevating top settings and improving settings page navigability", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=416093'} , 
+{ date: "May.2025", title:"Microsoft Edge: Intune policies in the Edge management service", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=485799'} , 
+{ date: "April.2025", title:"Microsoft Edge: v.136 - Authorized Group Setting in Microsoft Edge for Business", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=422502'} , 
+{ date: "April.2025", title:"Microsoft Edge: v.136 - Feature Usage Data Sync", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=464208'} , 
+{ date: "April.2025", title:"Microsoft Edge: Updated Work feed on the new tab page", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=483505'} , 
+{ date: "March.2025", title:"Microsoft Copilot (Microsoft 365): BizChat - Edge contextual capabilities in Business Chat work mode", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=468884'} , 
+{ date: "February.2025", title:"Microsoft Edge: v.133 - Extending support for viewing MIP Protected PDF Files to different sovereignties (including GCCH)", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=383534'} , 
+{ date: "October.2024", title:"Microsoft Edge: Edge on MacOS now seamlessly opens links in Teams", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=414521'}
+    ]);</script>

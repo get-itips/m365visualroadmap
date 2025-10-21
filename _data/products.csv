@@ -36,4 +36,8 @@ Edge,https://www.microsoft.com/releasecommunications/api/v2/m365?includeFacets=t
 MicrosoftIP,https://www.microsoft.com/releasecommunications/api/v2/m365?includeFacets=true&skip=0&filter=products/any(f:f%20eq%20%27Microsoft%20Information%20Protection%27)&orderby=generalAvailabilityDate%20desc
 PurviewCompliancePortal,https://www.microsoft.com/releasecommunications/api/v2/m365?includeFacets=true&skip=0&filter=products/any(f:f%20eq%20%27Microsoft%20Purview%20compliance%20portal%27)&orderby=generalAvailabilityDate%20desc
 MinecraftEducation,https://www.microsoft.com/releasecommunications/api/v2/m365?includeFacets=true&skip=0&filter=products/any(f:f%20eq%20%27Minecraft%20Education%27)&orderby=generalAvailabilityDate%20desc
-
+OneNote,https://www.microsoft.com/releasecommunications/api/v2/m365?includeFacets=true&skip=0&filter=products/any(f:f%20eq%20%27OneNote%27)&orderby=generalAvailabilityDate%20desc
+PowerApps,https://www.microsoft.com/releasecommunications/api/v2/m365?includeFacets=true&skip=0&filter=products/any(f:f%20eq%20%27PowerApps%27)&orderby=generalAvailabilityDate%20desc
+Syntex,https://www.microsoft.com/releasecommunications/api/v2/m365?includeFacets=true&skip=0&filter=products/any(f:f%20eq%20%27SharePoint%20Syntex%27)&orderby=generalAvailabilityDate%20desc
+Whiteboard,https://www.microsoft.com/releasecommunications/api/v2/m365?includeFacets=true&skip=0&filter=products/any(f:f%20eq%20%27Whiteboard%27)&orderby=generalAvailabilityDate%20desc
+Word,https://www.microsoft.com/releasecommunications/api/v2/m365?includeFacets=true&skip=0&filter=products/any(f:f%20eq%20%27Word%27)&orderby=generalAvailabilityDate%20desc
