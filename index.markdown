@@ -18,7 +18,7 @@ Roadmap files are generated daily at 12:00 UTC. If you find any issues please op
 |[Excel](./roadmap/Excel.html) | [Exchange](./roadmap/Exchange.html)| [Forms](./roadmap/Forms.html)|
 |[Microsoft 365](./roadmap/Microsoft365.html) | [Microsoft 365 admin center](./roadmap/M365AdminCenter.html)| [Microsoft 365 app](./roadmap/M365App.html)|
 |[Microsoft 365 Defender](./roadmap/Microsoft365Defender.html) | [Microsoft Clipchamp](./roadmap/Clipchamp.html)| [Microsoft Copilot (Microsoft 365)](./roadmap/Copilot.html)|
-|[Microsoft Defender for Cloud Apps](./roadmap/DefenderForCloudApps.html) | [Microsoft Defender for Office 365](./roadmap/DefenderOffice365.html)| [Microsoft Edge](./roadmap/edge.html)|
+|[Microsoft Defender for Cloud Apps](./roadmap/DefenderForCloudApps.html) | [Microsoft Defender for Office 365](./roadmap/DefenderOffice365.html)| [Microsoft Edge](./roadmap/Edge.html)|
 |[Microsoft Entra](./roadmap/Entra.html) | [Microsoft Graph](./roadmap/Graph.html)| [Microsoft Information Protection](./roadmap/MicrosoftIP.html)|
 |[Microsoft Intune](./roadmap/Intune.html) | [Microsoft Project](./roadmap/Project.html)| [Microsoft Purview compliance portal](./roadmap/PurviewCompliancePortal.html)|
 |[Microsoft Search](./roadmap/Search.html) | [Microsoft Stream](./roadmap/Stream.html)| [Microsoft Teams](./roadmap/Teams.html)|
