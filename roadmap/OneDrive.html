@@ -1,0 +1,74 @@
+---
+layout: default
+title: ◉ M365 Visual Roadmap
+---
+
+<style>
+.wrapper a {
+    display: block;       /* Each link on a new line */
+    margin-bottom: 8px;   /* Space between links */
+    word-break: break-word;    /* breaks long words */
+	font-family: Segoe UI;
+	font-size: 13px;
+}
+
+	
+</style>
+
+<link rel="stylesheet" href="https://unpkg.com/d3-milestones/build/d3-milestones.css">
+<script src="https://unpkg.com/d3-milestones/build/d3-milestones.min.js"></script>
+
+<div id="timeline"></div>
+
+<script>
+  milestones('#timeline')
+	.optimize('true')
+	.autoResize('false')
+	.urlTarget('_blank')
+	.distribution('top-bottom')
+    .mapping({
+      'timestamp': 'date',
+      'text': 'title',
+	  'url': 'url'
+    })
+    .parseTime('%B.%Y')
+    .aggregateBy('month')
+    .render([
+	
+	
+
+{ date: "April.2026", title:"Microsoft 365: The Next Generation of File & Folder Sharing", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=492622'} , 
+{ date: "March.2026", title:"Microsoft 365: Information Barriers (IB) upgrading from IB v1 to IB v2 with new capabilities", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=115482'} , 
+{ date: "October.2025", title:"OneDrive: Agents in OneDrive", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=469503'} , 
+{ date: "October.2025", title:"OneDrive: OneDrive files as knowledge sources for agents", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=480728'} , 
+{ date: "October.2025", title:"OneDrive: Transfer ownership of departing employees’ files with ease", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=493946'} , 
+{ date: "August.2025", title:"OneDrive: Sync admin reports - GCC", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=393333'} , 
+{ date: "August.2025", title:"OneDrive: Sync admin reports - GCC-H and DoD", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=496988'} , 
+{ date: "July.2025", title:"OneDrive: Annotate with Apple Pencil Experience on OneDrive for iOS", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=481517'} , 
+{ date: "July.2025", title:"SharePoint: OneDrive and SharePoint – Protect PDF with password", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=482193'} , 
+{ date: "July.2025", title:"SharePoint: OneDrive and SharePoint – Use table of contents in PDF", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=486859'} , 
+{ date: "July.2025", title:"OneDrive: Prompt for permitted users to sign in to OneDrive app with personal Microsoft account", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=490064'} , 
+{ date: "June.2025", title:"OneDrive: Sync admin reports - bulk data export", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=88870'} , 
+{ date: "June.2025", title:"OneDrive: Admins can configure a group policy to block specific folders from OneDrive Sync", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=178292'} , 
+{ date: "June.2025", title:"SharePoint: OneDrive and SharePoint -  Apply watermark to PDF", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=485796'} , 
+{ date: "June.2025", title:"OneDrive: New Folder Anyone Link Permission: View & Upload", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=485801'} , 
+{ date: "May.2025", title:"OneDrive: Enable OCSI for Tenants ", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=429874'} , 
+{ date: "May.2025", title:"OneDrive: Office Files on Hold ", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=429875'} , 
+{ date: "May.2025", title:"Microsoft Copilot (Microsoft 365): Audio summary of your file ", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=478649'} , 
+{ date: "May.2025", title:"SharePoint: M365/SharePoint Agent Insights for SharePoint Administrators", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=486861'} , 
+{ date: "May.2025", title:"Microsoft Copilot (Microsoft 365): Sharing with Copilot summary - Now supporting PowerPoint, Excel, PDFs, Images, and protected files", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=490156'} , 
+{ date: "April.2025", title:"OneDrive: Create a presentation from a Word file", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=469501'} , 
+{ date: "April.2025", title:"OneDrive: Convert Copilot response into a Word file", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=469502'} , 
+{ date: "March.2025", title:"OneDrive: Catch up with Copilot", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=469498'} , 
+{ date: "March.2025", title:"OneDrive: Ask Copilot questions on meeting recordings", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=469500'} , 
+{ date: "March.2025", title:"OneDrive: Upcoming change to shared folder experience in Microsoft OneDrive", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=479965'} , 
+{ date: "March.2025", title:"OneDrive: OneDrive: New annotation layout and tools for PDF editing", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=483156'} , 
+{ date: "February.2025", title:"OneDrive: Ask Copilot questions about images", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=469499'} , 
+{ date: "October.2024", title:"OneDrive: View PDFs with Purview Information Protection sensitivity labels on OneDrive Web", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=416077'} , 
+{ date: "October.2024", title:"OneDrive: Hide people previewing files in OneDrive and SharePoint", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=419814'} , 
+{ date: "September.2024", title:"OneDrive: View PDFs with Purview Information Protection sensitivity labels on OneDrive Mobile", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=407386'} , 
+{ date: "April.2024", title:"OneDrive: Recurring meetings in Meetings view   ", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=388382'} , 
+{ date: "March.2024", title:"OneDrive: View hidden files and folders in 'Shared with you' view", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=388381'} , 
+{ date: "February.2024", title:"OneDrive: Offline mode", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=168618'} , 
+{ date: "February.2024", title:"OneDrive: New empty state images", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=380177'}
+    ]);</script>

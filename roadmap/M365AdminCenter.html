@@ -1,0 +1,64 @@
+---
+layout: default
+title: ◉ M365 Visual Roadmap
+---
+
+<style>
+.wrapper a {
+    display: block;       /* Each link on a new line */
+    margin-bottom: 8px;   /* Space between links */
+    word-break: break-word;    /* breaks long words */
+	font-family: Segoe UI;
+	font-size: 13px;
+}
+
+	
+</style>
+
+<link rel="stylesheet" href="https://unpkg.com/d3-milestones/build/d3-milestones.css">
+<script src="https://unpkg.com/d3-milestones/build/d3-milestones.min.js"></script>
+
+<div id="timeline"></div>
+
+<script>
+  milestones('#timeline')
+	.optimize('true')
+	.autoResize('false')
+	.urlTarget('_blank')
+	.distribution('top-bottom')
+    .mapping({
+      'timestamp': 'date',
+      'text': 'title',
+	  'url': 'url'
+    })
+    .parseTime('%B.%Y')
+    .aggregateBy('month')
+    .render([
+	
+	
+
+{ date: "March.2026", title:"Microsoft 365 admin center: Organizational Messages now supports Email messages", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=503562'} , 
+{ date: "March.2026", title:"Microsoft 365 admin center: Organizational Messages now supports Action Segments", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=503563'} , 
+{ date: "March.2026", title:"Microsoft 365 admin center: Organizational Messages now supports Hybrid-joined Devices", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=503564'} , 
+{ date: "December.2025", title:"SharePoint: SharePoint agent usage statistics across all SharePoint sites", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=480729'} , 
+{ date: "December.2025", title:"Microsoft 365 Admin Center: Agent-Level Controls for Pay-as-you-go", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=496363'} , 
+{ date: "November.2025", title:"Microsoft Purview compliance portal: Endpoint Data Loss Prevention -- Always-on diagnostics for macOS endpoints (Phase 1)", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=499432'} , 
+{ date: "October.2025", title:"Microsoft Copilot (Microsoft 365): Frontier and Microsoft agent user request approval flow in Microsoft 365 admin center", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=494809'} , 
+{ date: "October.2025", title:"Microsoft Purview compliance portal: Audit logs for agent management in Microsoft 365 admin center", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=498227'} , 
+{ date: "October.2025", title:"Microsoft Copilot (Microsoft 365): Admin control for org-wide agent sharing", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=500376'} , 
+{ date: "October.2025", title:"Microsoft 365 admin center: Agent Ownership Reassignment", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=502867'} , 
+{ date: "October.2025", title:"Microsoft 365 admin center: Agent metadata in inventory export", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=502878'} , 
+{ date: "October.2025", title:"Microsoft 365 admin center: Capacity Pack Support for SharePoint Agent and Copilot Tuning in MAC ", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=503145'} , 
+{ date: "October.2025", title:"Microsoft 365 Admin Center: Authoritative content management for Microsoft 365 Copilot Search", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=503553'} , 
+{ date: "September.2025", title:"Microsoft 365 Admin Center: Prepurchase Capacity Packs for Microsoft 365 Copilot Chat", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=496139'} , 
+{ date: "September.2025", title:"Microsoft 365 admin center: Agents usage report", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497999'} , 
+{ date: "September.2025", title:"Microsoft Copilot (Microsoft 365): [Copilot Extensibility] Delete Schema Properties via Copilot Connector APIs", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=498919'} , 
+{ date: "September.2025", title:"Microsoft 365 admin center: New Support for Historical Data Uploads in Organizational Data in Microsoft 365", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=500896'} , 
+{ date: "September.2025", title:"Microsoft Copilot (Microsoft 365): Permission details for agents in MAC", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=502617'} , 
+{ date: "August.2025", title:"Microsoft 365 admin center: Usage reports - Copilot Chat - Usage intensity and new app coverage", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=495549'} , 
+{ date: "August.2025", title:"Microsoft 365 admin center: Usage reports - Microsoft 365 Copilot search", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497545'} , 
+{ date: "July.2025", title:"Microsoft 365 admin center: new scenarios enabling in Microsoft 365 Monitoring", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=496176'} , 
+{ date: "July.2025", title:"Microsoft 365 admin center: M365 Copilot Billing and usage - Budget limits", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497417'} , 
+{ date: "July.2025", title:"Microsoft 365 Admin Center: Setting to pin M365 Copilot app to Windows taskbar", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=498221'} , 
+{ date: "June.2025", title:"Microsoft 365 Admin Center: Copilot Search management and insights", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=495460'}
+    ]);</script>

@@ -1,0 +1,131 @@
+---
+layout: default
+title: ◉ M365 Visual Roadmap
+---
+
+<style>
+.wrapper a {
+    display: block;       /* Each link on a new line */
+    margin-bottom: 8px;   /* Space between links */
+    word-break: break-word;    /* breaks long words */
+	font-family: Segoe UI;
+	font-size: 13px;
+}
+
+	
+</style>
+
+<link rel="stylesheet" href="https://unpkg.com/d3-milestones/build/d3-milestones.css">
+<script src="https://unpkg.com/d3-milestones/build/d3-milestones.min.js"></script>
+
+<div id="timeline"></div>
+
+<script>
+  milestones('#timeline')
+	.optimize('true')
+	.autoResize('false')
+	.urlTarget('_blank')
+	.distribution('top-bottom')
+    .mapping({
+      'timestamp': 'date',
+      'text': 'title',
+	  'url': 'url'
+    })
+    .parseTime('%B.%Y')
+    .aggregateBy('month')
+    .render([
+	
+	
+
+{ date: "July.2026", title:" SharePoint: Microsoft 365 Archive file-level archiving", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=477371'} , 
+{ date: "April.2026", title:"Microsoft 365: The Next Generation of File & Folder Sharing", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=492622'} , 
+{ date: "March.2026", title:"Microsoft 365: Information Barriers (IB) upgrading from IB v1 to IB v2 with new capabilities", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=115482'} , 
+{ date: "January.2026", title:"Microsoft Copilot (Microsoft 365): Knowledge Agent", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=501451'} , 
+{ date: "December.2025", title:"Microsoft Viva: SharePoint agent analytics on Viva Insights", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=480726'} , 
+{ date: "December.2025", title:"SharePoint: SharePoint agent usage statistics across all SharePoint sites", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=480729'} , 
+{ date: "November.2025", title:"SharePoint: Enterprise Application Insights for SharePoint sites", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=417481'} , 
+{ date: "November.2025", title:"SharePoint: Agent usage statistics per SharePoint site", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=480725'} , 
+{ date: "November.2025", title:"SharePoint: Chat one-on-one with SharePoint agents in Teams", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=481825'} , 
+{ date: "November.2025", title:"SharePoint: Document Libraries - A new forms experience for streamlined document collection", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=489834'} , 
+{ date: "November.2025", title:"Microsoft Teams: New Workflows app experience in Teams and SharePoint", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=491632'} , 
+{ date: "November.2025", title:"SharePoint: Permissions report for a given user - SharePoint admin center", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=492621'} , 
+{ date: "November.2025", title:"SharePoint: Updated Document Library User Experience ", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=500870'} , 
+{ date: "November.2025", title:"SharePoint: Optimizing Version History for lists and libraries", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=511800'} , 
+{ date: "November.2025", title:"Microsoft Copilot (Microsoft 365): Metadata understanding support for queries scoped to SharePoint document libraries or folders", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=516044'} , 
+{ date: "October.2025", title:"OneDrive: OneDrive files as knowledge sources for agents", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=480728'} , 
+{ date: "October.2025", title:"Microsoft SharePoint: New web part for FAQs", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=482198'} , 
+{ date: "October.2025", title:"Microsoft 365 admin center: Manage SharePoint agents via Agents page", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=487857'} , 
+{ date: "October.2025", title:"SharePoint: eSignature - Free Text Field Support", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=499024'} , 
+{ date: "October.2025", title:"SharePoint: Content Management Assessment (CMA)", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=501427'} , 
+{ date: "October.2025", title:"SharePoint: New Microsoft 365 Copilot Skills for SharePoint Administration  ", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=501455'} , 
+{ date: "September.2025", title:"SharePoint: SharePoint Agents in Teams Channels", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=481822'} , 
+{ date: "September.2025", title:"SharePoint: SharePoint agents in Teams Mobile", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=481823'} , 
+{ date: "September.2025", title:"SharePoint: SharePoint agents are available in Teams app Store", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=481824'} , 
+{ date: "September.2025", title:"Add multiple SharePoint agents in a single Teams conversation", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=481826'} , 
+{ date: "September.2025", title:"Microsoft Copilot (Microsoft 365): Access SharePoint agents in the Microsoft 365 Copilot app", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=482601'} , 
+{ date: "September.2025", title:"SharePoint: Copilot actions in SharePoint document libraries", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=488297'} , 
+{ date: "September.2025", title:"SharePoint: Advanced Page Analytics", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=488502'} , 
+{ date: "September.2025", title:"SharePoint: Sections with Copilot", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=498547'} , 
+{ date: "September.2025", title:"SharePoint: Updates to News page in SharePoint sites", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=499654'} , 
+{ date: "September.2025", title:"SharePoint: Metadata understanding in SharePoint agents", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=502516'} , 
+{ date: "August.2025", title:"SharePoint: New Content AI Rules in SharePoint to set sensitivity labels and retention policy", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=410211'} , 
+{ date: "August.2025", title:"SharePoint: Header & Footer Enhancements", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=489225'} , 
+{ date: "August.2025", title:"SharePoint: Site attestation", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=494159'} , 
+{ date: "August.2025", title:"SharePoint: Signed Adobe & Docusign documents saved to the originating folder", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=498232'} , 
+{ date: "July.2025", title:"SharePoint: OneDrive and SharePoint – Use table of contents in PDF", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=486859'} , 
+{ date: "July.2025", title:"SharePoint: OneDrive and SharePoint – Compress your PDF", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=487440'} , 
+{ date: "July.2025", title:"SharePoint: Improved processing status experience for Content AI models in SharePoint Online", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=489453'} , 
+{ date: "July.2025", title:"SharePoint: New File Format Support for Document Translation", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=492984'} , 
+{ date: "July.2025", title:"SharePoint: Support for click through rate metric in page analytics", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=496374'} , 
+{ date: "July.2025", title:"SharePoint: Text Editor Copilot 'Refine' update ", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497132'} , 
+{ date: "July.2025", title:"SharePoint: eSignature - globally available", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497419'} , 
+{ date: "June.2025", title:"SharePoint: OneDrive and SharePoint -  Apply watermark to PDF", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=485796'} , 
+{ date: "June.2025", title:"SharePoint: Office 365 CDN in SharePoint", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=489230'} , 
+{ date: "June.2025", title:"SharePoint: Modern SharePoint Page Templates", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=490565'} , 
+{ date: "June.2025", title:"SharePoint: Optical Character Recognition (OCR) Backfill for SharePoint Sites", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=491023'} , 
+{ date: "June.2025", title:"SharePoint: Time to read on SharePoint News posts ", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=491024'} , 
+{ date: "May.2025", title:"SharePoint: Restricted Access Control Enhancements ", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=483028'} , 
+{ date: "May.2025", title:"SharePoint: SharePoint eSignature for Microsoft Word", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=486707'} , 
+{ date: "May.2025", title:"SharePoint: M365/SharePoint Agent Insights for SharePoint Administrators", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=486861'} , 
+{ date: "May.2025", title:"SharePoint: Customize your sites with multi-color themes", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=489833'} , 
+{ date: "May.2025", title:"SharePoint: Create multi-color themes for SharePoint in brand center", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=490062'} , 
+{ date: "May.2025", title:"Microsoft Copilot (Microsoft 365): Sharing with Copilot summary - Now supporting PowerPoint, Excel, PDFs, Images, and protected files", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=490156'} , 
+{ date: "April.2025", title:"SharePoint: Card animation", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=481510'} , 
+{ date: "April.2025", title:"SharePoint: Design ideas for quick links webpart ", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=482411'} , 
+{ date: "April.2025", title:"SharePoint: Content Security Policy Control in Tenant Administration", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=485797'} , 
+{ date: "April.2025", title:"SharePoint: Dashboard in Sites", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=486832'} , 
+{ date: "March.2025", title:"SharePoint: Preview for Pages and News", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=473452'} , 
+{ date: "March.2025", title:"SharePoint: Design Ideas Suggests Images from Org Assets ", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=484053'} , 
+{ date: "March.2025", title:"SharePoint: Design Ideas for Blank Flexible Sections", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=484054'} , 
+{ date: "February.2025", title:"SharePoint: Flexible Layouts", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=395213'} , 
+{ date: "February.2025", title:"SharePoint: SharePoint Advanced Management - Restricted content discoverability", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=416065'} , 
+{ date: "February.2025", title:"SharePoint: Authoring Copilot in SharePoint", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=418126'} , 
+{ date: "February.2025", title:"Microsoft Viva: Connections on the SharePoint app bar", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=468290'} , 
+{ date: "February.2025", title:"SharePoint: Pages authoring accessibility checker", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=470603'} , 
+{ date: "January.2025", title:"Microsoft Copilot (Microsoft 365): Copilot Prompt Gallery - Share a prompt to a Microsoft Teams team ", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=391636'} , 
+{ date: "January.2025", title:"SharePoint: Microsoft Lists - Conditional branching in Microsoft Lists forms", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=410771'} , 
+{ date: "January.2025", title:"SharePoint: Editorial Card web part in SharePoint Pages and News", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=414524'} , 
+{ date: "January.2025", title:"SharePoint: Approvals integration in Document Libraries", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=420336'} , 
+{ date: "January.2025", title:"SharePoint: Additional support on SPAC to identify different types of Embedded containers and their principal owner", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=472919'} , 
+{ date: "January.2025", title:"SharePoint: Modifications in the Embedded container type creation cmdlets in PowerShell", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=472920'} , 
+{ date: "January.2025", title:"SharePoint: Syntex Optical Character Recognition (OCR) extends support for Microsoft Office files", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=475248'} , 
+{ date: "December.2024", title:"SharePoint: Pages - Updated Hero web part with new layout & styles", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=395214'} , 
+{ date: "November.2024", title:"SharePoint: Site ownership policy", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=396172'} , 
+{ date: "November.2024", title:"SharePoint: Using Data Access Governance to understand the tenant's current permission landscape", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=406552'} , 
+{ date: "November.2024", title:"SharePoint: Site Access Review offers a way for SharePoint tenants to empower site owners using Data Access Governance", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=406553'} , 
+{ date: "November.2024", title:"SharePoint: Introducing archival and other enforcement actions with inactive site lifecycle management policy", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=412940'} , 
+{ date: "November.2024", title:"SharePoint: Microsoft Syntex – simple document processing model", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=413430'} , 
+{ date: "November.2024", title:"SharePoint: Site access review from Sharing link reports in Data Access Governance", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=414525'} , 
+{ date: "November.2024", title:"SharePoint: SharePoint site content & policy comparison using AI", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=415167'} , 
+{ date: "November.2024", title:"SharePoint: Updates for font management capabilities", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=420933'} , 
+{ date: "November.2024", title:"SharePoint: Enhanced functionalities to manage SharePoint Embedded Containers through SharePoint Admin Center ", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=468886'} , 
+{ date: "October.2024", title:"SharePoint: Customize your individual sites and experiences with themes", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=375500'} , 
+{ date: "October.2024", title:"SharePoint: Enhancing SharePoint document translation with glossary feature", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=410212'} , 
+{ date: "October.2024", title:"SharePoint: Microsoft Syntex - Update to Microsoft Syntex translation", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=410213'} , 
+{ date: "October.2024", title:"SharePoint: Auto-run Data Access Governance (DAG) reports", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=414526'} , 
+{ date: "October.2024", title:"Sharepoint: Sharepoint Agents", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=416297'} , 
+{ date: "October.2024", title:"OneDrive: Hide people previewing files in OneDrive and SharePoint", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=419814'} , 
+{ date: "August.2024", title:"SharePoint: Change history reports", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=392097'} , 
+{ date: "June.2024", title:"SharePoint: Collaborate on SharePoint pages and news with co-authoring", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=124853'} , 
+{ date: "April.2024", title:"SharePoint: Pages - Heading levels for web parts", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=387500'}
+    ]);</script>

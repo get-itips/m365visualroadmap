@@ -1,0 +1,62 @@
+---
+layout: default
+title: ◉ M365 Visual Roadmap
+---
+
+<style>
+.wrapper a {
+    display: block;       /* Each link on a new line */
+    margin-bottom: 8px;   /* Space between links */
+    word-break: break-word;    /* breaks long words */
+	font-family: Segoe UI;
+	font-size: 13px;
+}
+
+	
+</style>
+
+<link rel="stylesheet" href="https://unpkg.com/d3-milestones/build/d3-milestones.css">
+<script src="https://unpkg.com/d3-milestones/build/d3-milestones.min.js"></script>
+
+<div id="timeline"></div>
+
+<script>
+  milestones('#timeline')
+	.optimize('true')
+	.autoResize('false')
+	.urlTarget('_blank')
+	.distribution('top-bottom')
+    .mapping({
+      'timestamp': 'date',
+      'text': 'title',
+	  'url': 'url'
+    })
+    .parseTime('%B.%Y')
+    .aggregateBy('month')
+    .render([
+	
+	
+
+{ date: "June.2026", title:"OneNote: Boost productivity using voice with Copilot on OneNote Mobile (iPhone)", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=422320'} , 
+{ date: "June.2026", title:"OneNote: Boost productivity using voice with Copilot on OneNote Mobile (Android)", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=422321'} , 
+{ date: "June.2026", title:"OneNote: Copilot on OneNote brings in notes from Video and Images (Android)", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=422322'} , 
+{ date: "June.2026", title:"OneNote: Copilot on OneNote brings in notes from Video and Images (iPhone)", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=422325'} , 
+{ date: "January.2026", title:"OneNote: Microsoft Purview Sensitivity Labels in OneNote", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=500020'} , 
+{ date: "December.2025", title:"Microsoft Copilot (Microsoft 365): Copilot Prompt Gallery - Company-wide prompt publishing", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=486695'} , 
+{ date: "November.2025", title:"Microsoft Copilot (Microsoft 365): 1-click to create a FAQ page based on content in Copilot Notebook", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497133'} , 
+{ date: "November.2025", title:"Microsoft Copilot (Microsoft 365): 1-click to create a Brief page based on content in Copilot Notebook", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497134'} , 
+{ date: "November.2025", title:"OneNote: Copilot Notebook in OneNote iPhone and iPad", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=511794'} , 
+{ date: "November.2025", title:"OneNote: Copilot Notebooks available in OneNote on Web", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=511797'} , 
+{ date: "September.2025", title:"OneNote: Summary and Q&A in OneNote Mobile with Copilot (Android)", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=422323'} , 
+{ date: "September.2025", title:"OneNote: Summary and Q&A in OneNote Mobile with Copilot (Iphone)", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=422324'} , 
+{ date: "September.2025", title:"Microsoft Copilot (Microsoft 365): Researcher available in Copilot Notebooks", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=493288'} , 
+{ date: "July.2025", title:"Microsoft Copilot (Microsoft 365): Access Copilot Chat in your Microsoft 365 apps", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=494830'} , 
+{ date: "May.2025", title:"OneNote: Copilot Notebooks inside OneNote", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=464995'} , 
+{ date: "May.2025", title:"Microsoft Copilot (Microsoft 365): Copilot can generate an audio overview of a notebook", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=487854'} , 
+{ date: "May.2025", title:"Microsoft Copilot (Microsoft 365): OneNote Pages in M365 Copilot", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=490722'} , 
+{ date: "February.2025", title:"OneNote: Windows app - New protected virtual printer", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=402540'} , 
+{ date: "February.2025", title:"OneNote: Copilot Chat on OneNote for web and in Teams", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=417005'} , 
+{ date: "January.2025", title:"Microsoft Copilot (Microsoft 365): Take notes with Copilot in OneNote directly in the flow from the canvas", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=417475'} , 
+{ date: "November.2024", title:"Microsoft Copilot (Microsoft 365): Quick rewrite, summarize, and to do actions with Copilot on OneNote canvas", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=417476'} , 
+{ date: "April.2024", title:"OneNote: Teams Integrations with OneNote Meeting Details", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=388747'}
+    ]);</script>

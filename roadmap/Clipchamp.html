@@ -1,0 +1,52 @@
+---
+layout: default
+title: ◉ M365 Visual Roadmap
+---
+
+<style>
+.wrapper a {
+    display: block;       /* Each link on a new line */
+    margin-bottom: 8px;   /* Space between links */
+    word-break: break-word;    /* breaks long words */
+	font-family: Segoe UI;
+	font-size: 13px;
+}
+
+	
+</style>
+
+<link rel="stylesheet" href="https://unpkg.com/d3-milestones/build/d3-milestones.css">
+<script src="https://unpkg.com/d3-milestones/build/d3-milestones.min.js"></script>
+
+<div id="timeline"></div>
+
+<script>
+  milestones('#timeline')
+	.optimize('true')
+	.autoResize('false')
+	.urlTarget('_blank')
+	.distribution('top-bottom')
+    .mapping({
+      'timestamp': 'date',
+      'text': 'title',
+	  'url': 'url'
+    })
+    .parseTime('%B.%Y')
+    .aggregateBy('month')
+    .render([
+	
+	
+
+{ date: "August.2025", title:"Microsoft Clipchamp: Updated Clipchamp video start page", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=498229'} , 
+{ date: "June.2025", title:"Microsoft Clipchamp: Advanced editing from camera", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=468293'} , 
+{ date: "June.2025", title:"Updated Admin Controls ", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=468891'} , 
+{ date: "June.2025", title:"Microsoft Clipchamp: Sharing a portion of a video as a clip", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=468892'} , 
+{ date: "May.2025", title:"Microsoft Clipchamp: Windows Widget", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=488099'} , 
+{ date: "May.2025", title:"Microsoft Clipchamp: Camera Update", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=488100'} , 
+{ date: "April.2025", title:"Microsoft Clipchamp: Template creation in Commercial", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=468295'} , 
+{ date: "April.2025", title:"Microsoft Copilot (Microsoft 365): Clipchamp introduces Copilot-powered video creation from a prompt", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=471441'} , 
+{ date: "March.2025", title:"Microsoft Clipchamp: Transcript-based editing in Clipchamp", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=468890'} , 
+{ date: "February.2025", title:"Microsoft Copilot (Microsoft 365): Video creation in Copilot Visual Creator powered by Clipchamp", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=402192'} , 
+{ date: "February.2025", title:"Microsoft Clipchamp: Editor simplification and introduction of light mode", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=476490'} , 
+{ date: "December.2024", title:"Microsoft Clipchamp: Unified video branded start page", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=468289'}
+    ]);</script>
