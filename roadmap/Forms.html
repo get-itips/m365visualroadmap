@@ -1,0 +1,52 @@
+---
+layout: default
+title: ◉ M365 Visual Roadmap
+---
+
+<style>
+.wrapper a {
+    display: block;       /* Each link on a new line */
+    margin-bottom: 8px;   /* Space between links */
+    word-break: break-word;    /* breaks long words */
+	font-family: Segoe UI;
+	font-size: 13px;
+}
+
+	
+</style>
+
+<link rel="stylesheet" href="https://unpkg.com/d3-milestones/build/d3-milestones.css">
+<script src="https://unpkg.com/d3-milestones/build/d3-milestones.min.js"></script>
+
+<div id="timeline"></div>
+
+<script>
+  milestones('#timeline')
+	.optimize('true')
+	.autoResize('false')
+	.urlTarget('_blank')
+	.distribution('top-bottom')
+    .mapping({
+      'timestamp': 'date',
+      'text': 'title',
+	  'url': 'url'
+    })
+    .parseTime('%B.%Y')
+    .aggregateBy('month')
+    .render([
+	
+	
+
+{ date: "October.2025", title:"Microsoft Copilot (Microsoft 365): Surveys Agent helps you build, run, and analyze surveys", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=498219'} , 
+{ date: "April.2025", title:"Microsoft Copilot (Microsoft 365): Copilot in Forms can help monitor response collection and insights", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=470604'} , 
+{ date: "April.2025", title:"Microsoft Copilot (Microsoft 365): Copilot in Forms can now reference files to help generate drafts", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=474658'} , 
+{ date: "April.2025", title:"Microsoft Copilot (Microsoft 365): Copilot in Forms has been refreshed to help users better refine and edit their forms", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=474659'} , 
+{ date: "November.2024", title:"Excel: Forms data sync support in Excel desktop", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=466743'} , 
+{ date: "October.2024", title:"Microsoft Forms: New user onboarding experience", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=375742'} , 
+{ date: "October.2024", title:"Microsoft Forms: New data sync solution to Excel for the web in Microsoft OneDrive and SharePoint Online", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=418378'} , 
+{ date: "September.2024", title:"Microsoft Forms: New data sync solution replaces old data sync solution for syncing forms responses to Excel", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=410988'} , 
+{ date: "August.2024", title:"Microsoft Copilot (Microsoft 365): Copilot in Forms can generate quizzes from provided materials", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=389149'} , 
+{ date: "August.2024", title:"Microsoft Copilot (Microsoft 365): Copilot in Forms aids students with step-by-step solutions for quiz questions", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=392843'} , 
+{ date: "July.2024", title:"Microsoft Forms: Polls in Teams Meetings for GCC High", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=400387'} , 
+{ date: "September.2023", title:"Microsoft Forms: Migrate Google Forms through the M365 Admin Center", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=140110'}
+    ]);</script>

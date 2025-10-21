@@ -1,0 +1,106 @@
+---
+layout: default
+title: ◉ M365 Visual Roadmap
+---
+
+<style>
+.wrapper a {
+    display: block;       /* Each link on a new line */
+    margin-bottom: 8px;   /* Space between links */
+    word-break: break-word;    /* breaks long words */
+	font-family: Segoe UI;
+	font-size: 13px;
+}
+
+	
+</style>
+
+<link rel="stylesheet" href="https://unpkg.com/d3-milestones/build/d3-milestones.css">
+<script src="https://unpkg.com/d3-milestones/build/d3-milestones.min.js"></script>
+
+<div id="timeline"></div>
+
+<script>
+  milestones('#timeline')
+	.optimize('true')
+	.autoResize('false')
+	.urlTarget('_blank')
+	.distribution('top-bottom')
+    .mapping({
+      'timestamp': 'date',
+      'text': 'title',
+	  'url': 'url'
+    })
+    .parseTime('%B.%Y')
+    .aggregateBy('month')
+    .render([
+	
+	
+
+{ date: "March.2026", title:"Microsoft 365 app: Microsoft Loop - Admin usage reports for Loop", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=421611'} , 
+{ date: "March.2026", title:"Microsoft 365 app: Microsoft Loop - User accessible recycle bin for Loop workspaces", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=421615'} , 
+{ date: "March.2026", title:"Microsoft 365 app: Microsoft Loop - Loop workspaces for Microsoft 365 GCC", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=481154'} , 
+{ date: "March.2026", title:"Microsoft Copilot (Microsoft 365): Seamless Search and Chat Integration", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=512429'} , 
+{ date: "January.2026", title:"Microsoft 365 app: Microsoft Loop - Departed user content workflows for user-owned Loop workspaces", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=421612'} , 
+{ date: "December.2025", title:"Microsoft 365 app: Microsoft Places - Onboard to the Places Directory with AI", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=488102'} , 
+{ date: "November.2025", title:"Microsoft 365 app: Microsoft Loop - Multi-geo support for shared Loop workspaces", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=421616'} , 
+{ date: "November.2025", title:"Microsoft 365 app: Microsoft Loop – Require Existing Microsoft 365 Group for New Loop workspaces", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=422725'} , 
+{ date: "November.2025", title:"Microsoft Excel: Extending support for Insights Services to GCC-H and DoD sovereign clouds", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=488142'} , 
+{ date: "November.2025", title:"Microsoft Copilot (Microsoft 365): 1-click to create a FAQ page based on content in Copilot Notebook", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497133'} , 
+{ date: "November.2025", title:"Microsoft Copilot (Microsoft 365): 1-click to create a Brief page based on content in Copilot Notebook", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497134'} , 
+{ date: "November.2025", title:"Microsoft Copilot (Microsoft 365): Generating PPT grounded on a Copilot Page", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=499425'} , 
+{ date: "November.2025", title:"Microsoft 365 app: Add Search results as references to your Copilot Notebooks in the M365 Copilot app", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=510100'} , 
+{ date: "November.2025", title:"Microsoft 365 app: Copilot Notebooks are now available to 13-17 year-old users with Entra ID accounts", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=510105'} , 
+{ date: "November.2025", title:"Microsoft Copilot (Microsoft 365): Video Overview in Copilot Notebooks", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=511793'} , 
+{ date: "November.2025", title:"Microsoft 365 app: Overview Page in Copilot Notebooks", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=512430'} , 
+{ date: "November.2025", title:"Microsoft Copilot (Microsoft 365): Web Link as a Reference in Copilot Notebooks", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=516040'} , 
+{ date: "October.2025", title:"Microsoft Places: Microsoft Places Support to GCC cloud", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=495465'} , 
+{ date: "October.2025", title:"Microsoft Copilot (Microsoft 365): Increased efficiency with auto-generated Copilot Pages", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497161'} , 
+{ date: "October.2025", title:"Microsoft 365 app: Sharing Copilot Notebooks", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=506851'} , 
+{ date: "October.2025", title:"Microsoft Copilot (Microsoft 365): Start writing, coding, and creating with Copilot in Pages", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=509109'} , 
+{ date: "September.2025", title:"Microsoft 365 app: Microsoft Places - Built in Admin role support", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=488103'} , 
+{ date: "September.2025", title:"Microsoft Copilot (Microsoft 365): Audio Overview customization in Copilot Notebooks", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=499150'} , 
+{ date: "September.2025", title:"Microsoft Copilot (Microsoft 365): Preview and chat with Microsoft Word, Excel, and PowerPoint files in the Microsoft 365 Copilot app on iPhone", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=500159'} , 
+{ date: "August.2025", title:"Microsoft 365 app: Microsoft Places Management portal", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=487860'} , 
+{ date: "August.2025", title:"Microsoft 365 app: Microsoft Places - Graph API support for directory objects", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=488101'} , 
+{ date: "August.2025", title:"Microsoft 365 app: Microsoft Places - Book desks from maps", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=488802'} , 
+{ date: "August.2025", title:"Microsoft 365 app: Microsoft Places - Configure auto-release for desks ", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=488804'} , 
+{ date: "August.2025", title:"Microsoft 365 app: Microsoft Places - New options for desk mode configuration", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=488805'} , 
+{ date: "August.2025", title:"Microsoft 365 app: Microsoft Places - Find and book desks near colleagues ", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=488809'} , 
+{ date: "August.2025", title:"Microsoft Copilot (Microsoft 365): Improved Python-powered answers in Copilot in Excel", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=490212'} , 
+{ date: "August.2025", title:"Microsoft Copilot (Microsoft 365): New file extension for Copilot pages", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=494834'} , 
+{ date: "August.2025", title:"Microsoft Copilot (Microsoft 365): Configurate format, style, and duration of Audio Overviews in Copilot Notebooks", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=499151'} , 
+{ date: "August.2025", title:"Microsoft Copilot (Microsoft 365): Save an audio overview from Copilot Notebooks to OneDrive", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=499152'} , 
+{ date: "July.2025", title:"Microsoft Copilot (Microsoft 365): Microsoft 365 Copilot App - Ask M365 Copilot", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=487856'} , 
+{ date: "July.2025", title:"Microsoft Copilot (Microsoft 365): Microsoft 365 Copilot Search", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=490778'} , 
+{ date: "July.2025", title:"Microsoft 365 Apps: Cloud Update", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=496594'} , 
+{ date: "July.2025", title:"Word: 3rd party citation add-in in reference tab", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=497544'} , 
+{ date: "June.2025", title:"Outlook: Additional formatting options in Outlook for iOS and Android", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=411581'} , 
+{ date: "June.2025", title:"Microsoft 365 App: Availability of the Cloud Policy service for Microsoft 365 Government GCC-H and DoD", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=486984'} , 
+{ date: "June.2025", title:"Microsoft Copilot (Microsoft 365): Copilot in Excel with Python for GCC", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=489216'} , 
+{ date: "June.2025", title:"Microsoft Copilot (Microsoft 365): Copilot in Excel with Python for GCC High", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=489217'} , 
+{ date: "May.2025", title:"Microsoft Copilot (Microsoft 365): [Copilot Extensibility] Discover agent in Microsoft Copilot on iOS/Android", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=482545'} , 
+{ date: "May.2025", title:"Microsoft Copilot (Microsoft 365): Quickly launch the Microsoft 365 Copilot app on your iOS device", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=485724'} , 
+{ date: "May.2025", title:"Microsoft 365 app: Use Copilot in PDFs within the Microsoft 365 Copilot mobile app", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=485725'} , 
+{ date: "May.2025", title:"Microsoft 365 app: Copilot Notebooks Module", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=490777'} , 
+{ date: "April.2025", title:"Microsoft 365 app: Microsoft Loop –  Add a Loop Workspace to your Teams Channel", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=472022'} , 
+{ date: "April.2025", title:"Microsoft Copilot (Microsoft 365): Copilot in Excel with Python for Mac", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=473456'} , 
+{ date: "February.2025", title:"Microsoft 365 app: Microsoft Loop - Promote members to owners in Loop workspaces", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=362124'} , 
+{ date: "February.2025", title:"Microsoft 365 app: Microsoft Loop - Admin management tasks enabled for all Loop workspaces", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=421613'} , 
+{ date: "February.2025", title:"Microsoft 365 app: Microsoft Places - Space analytics with Copilot", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=422718'} , 
+{ date: "February.2025", title:"Microsoft 365 app: Microsoft Loop – New personal Loop workspace", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=422727'} , 
+{ date: "February.2025", title:"Microsoft 365 app: Microsoft Loop – Ideas Workspace Functions as a Shared Loop workspace", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=422729'} , 
+{ date: "February.2025", title:"Microsoft Copilot (Microsoft 365): Copilot in Excel with Python Language Expansion for Windows", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=473458'} , 
+{ date: "January.2025", title:"Microsoft 365 app: Microsoft Places - Workplace check-in with Workplace Presence", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=422717'} , 
+{ date: "December.2024", title:"Microsoft 365 app: Retention Labels are available for Loop pages and components", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=397755'} , 
+{ date: "December.2024", title:"Microsoft Copilot (Microsoft 365): Copilot Prompt Gallery - Share a prompt with a co-worker", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=400710'} , 
+{ date: "November.2024", title:"Microsoft 365 app: Microsoft Loop - Loop guest sharing via Entra B2B configuration for organizations with sensitivity labels", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=421614'} , 
+{ date: "November.2024", title:"Microsoft 365 app: Microsoft Places - Space analytics", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=422719'} , 
+{ date: "November.2024", title:"Microsoft 365 app: Microsoft Places - Managed booking with Copilot", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=422721'} , 
+{ date: "November.2024", title:"Microsoft 365 app: Microsoft Places - Intelligent suggestions in calendar", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=422723'} , 
+{ date: "November.2024", title:"Microsoft 365 app: Microsoft Places", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=433684'} , 
+{ date: "October.2024", title:"Microsoft 365 app: Microsoft Loop - Loop workspace sensitivity labels", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=111225'} , 
+{ date: "August.2024", title:"Microsoft 365 app: Use sensitivity labels in Microsoft 365 apps when connected experiences are disabled", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=374290'} , 
+{ date: "June.2024", title:"Microsoft 365 app: Loop generates a workspace after your Teams meeting", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=141433'} , 
+{ date: "January.2024", title:"Microsoft 365 app: Catch Up Improvements on Web", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=184359'}
+    ]);</script>
