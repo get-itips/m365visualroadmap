@@ -14,7 +14,7 @@ Roadmap files are generated daily at 12:00 UTC. If you find any issues please op
 
 | Product | Product | Product |
 | :-------------: | :-------------: |:-------------: |
-|[Access](./roadmap/Access.html) | [Azure Information Protection](./roadmap/Azureip.html)| [Bookings](./roadmap/Bookings.html)|
+|[Access](./roadmap/Access.html) | [Azure Information Protection](./roadmap/AzureIP.html)| [Bookings](./roadmap/Bookings.html)|
 |[Excel](./roadmap/Excel.html) | [Exchange](./roadmap/Exchange.html)| [Forms](./roadmap/Forms.html)|
 |[Microsoft 365](./roadmap/Microsoft365.html) | [Microsoft 365 admin center](./roadmap/M365AdminCenter.html)| [Microsoft 365 app](./roadmap/M365App.html)|
 |[Microsoft 365 Defender](./roadmap/Microsoft365Defender.html) | [Microsoft Clipchamp](./roadmap/Clipchamp.html)| [Microsoft Copilot (Microsoft 365)](./roadmap/Copilot.html)|
