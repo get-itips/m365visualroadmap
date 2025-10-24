@@ -4,7 +4,8 @@ title: ◉ M365 Visual Roadmap
 ---
 
 <style>
-.wrapper a {
+/* Scope to d3-milestones wrapper to avoid conflicts */
+.milestones__group__label-vertical .wrapper a {
     display: block;       /* Each link on a new line */
     margin-bottom: 8px;   /* Space between links */
     word-break: break-word;    /* breaks long words */
@@ -12,11 +13,15 @@ title: ◉ M365 Visual Roadmap
 	font-size: 13px;
 }
 
-	
+/* Override Jekyll theme's .main-content :first-child margin reset
+   The horizontal line needs margin-top: 4px to center bullets on the line */
+.main-content .milestones__horizontal_line {
+    margin-top: 4px !important;
+}
 </style>
 
-<link rel="stylesheet" href="https://unpkg.com/d3-milestones/build/d3-milestones.css">
-<script src="https://unpkg.com/d3-milestones/build/d3-milestones.min.js"></script>
+<link rel="stylesheet" href="/assets/d3-milestones/d3-milestones.css">
+<script src="/assets/d3-milestones/d3-milestones.min.js"></script>
 
 <div id="timeline"></div>
 
