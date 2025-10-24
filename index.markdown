@@ -10,7 +10,7 @@ This project began as a personal initiative and was later made public for anyone
 
 ## How to use
 Click on any product that you are interested on, it should load its roadmap items for the General Availability ring in a timeline format.
-Roadmap files are generated daily at 12:00 UTC. If you find any issues please open an issue in the GitHub repository.
+Roadmap files are generated daily at 12:00 UTC. If you find any issues, please open an issue in the GitHub repository.
 
 | Product | Product | Product |
 | :-------------: | :-------------: |:-------------: |
@@ -35,6 +35,9 @@ Use at your own discretion.
 
 ## Maintainer
 - [Andrés Gorzelany](https://www.linkedin.com/in/andresgorzelany/)
+
+## Change Log
+You can check the change log [here](./changelog).
 
 ## Acknowledgements
 This site wouldn't be possible without the great [d3-milestones](https://github.com/walterra/d3-milestones) by [walterra](https://github.com/walterra).
