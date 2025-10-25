@@ -46,7 +46,7 @@
 .milestones__group__label-horizontal div {
   position: relative;
   margin-left: 3px;
-  display: inline-block;
+  display: block;
 }
 .milestones__group__label-vertical {
   padding-left: 10px;
