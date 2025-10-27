@@ -89,7 +89,7 @@ if($countOfItems -eq 1){ #if result = 1 it returns a PSCustomObject object inste
 		$currentMonth = Get-Date -Day 1
 
 		# Compare both Month and Year
-		if ($targetDate -ge $currentMonth) {
+		if ($targetDate.Date -ge $currentMonth.Date) {
 			$renderItem="{ date: ""$date"", title:""$title"", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=$id', textStyle: {""font-weight"": ""bold""} }"
 		} else {
 			$renderItem="{ date: ""$date"", title:""$title"", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=$id'}"
