@@ -4,7 +4,7 @@
   
   .DESCRIPTION
   Checks the Microsoft 365 Roadmap API (https://www.microsoft.com/releasecommunications/api/v2) for new Roadmap items
-  Version: 0.1
+  Version: 0.2
 
   .NOTES
   Author: Andrés Gorzelany
@@ -76,12 +76,28 @@ if($countOfItems -eq 1){ #if result = 1 it returns a PSCustomObject object inste
 		$id=$item.id
 		$renderItem=""
 		
-		if($counter -eq $countOfItems){
-		$renderItem="{ date: ""$date"", title:""$title"", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=$id'}"
+		##### Date calc
+		# Parse as date using invariant (English) culture
+		$monthYear=$date.Replace("."," ")
+		$targetDate = [datetime]::ParseExact(
+			"1 $monthYear",
+			"d MMMM yyyy",
+			[Globalization.CultureInfo]::InvariantCulture
+		)
+
+		# Get the first day of the current month for consistent comparison
+		$currentMonth = Get-Date -Day 1
+
+		# Compare both Month and Year
+		if ($targetDate -ge $currentMonth) {
+			$renderItem="{ date: ""$date"", title:""$title"", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=$id', textStyle: {""font-weight"": ""bold""} }"
+		} else {
+			$renderItem="{ date: ""$date"", title:""$title"", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=$id'}"
 		}
-		else
-		{
-			$renderItem="{ date: ""$date"", title:""$title"", url:'https://www.microsoft.com/microsoft-365/roadmap?searchterms=$id'} , "	
+
+
+		if($counter -ne $countOfItems){
+			$renderItem=$renderItem+" , "
 		}
 		$timeline=$timeline+[Environment]::NewLine+$renderitem
 		
