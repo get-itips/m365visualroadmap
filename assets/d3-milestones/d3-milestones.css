@@ -22,8 +22,8 @@
 }
 .milestones__group {
   position: absolute;
-  font-family: sans-serif;
-  font-size: 10px;
+  font-family: Segoe UI;
+  font-size: 13px;
 }
 .milestones__group__bullet {
   background-color: #fff;
